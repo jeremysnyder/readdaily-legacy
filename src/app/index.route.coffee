@@ -1,4 +1,4 @@
-angular.module 'respresReadingPlan'
+angular.module 'readingPlan'
   .config ($stateProvider, $urlRouterProvider) ->
     'ngInject'
     $stateProvider

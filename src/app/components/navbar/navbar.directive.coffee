@@ -1,4 +1,4 @@
-angular.module 'respresReadingPlan'
+angular.module 'readingPlan'
   .directive 'acmeNavbar', ->
 
     NavbarController = (moment) ->

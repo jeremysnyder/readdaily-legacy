@@ -1,3 +1,2 @@
-angular.module('respresReadingPlan')
-  .constant 'malarkey', malarkey
+angular.module('readingPlan')
   .constant 'moment', moment

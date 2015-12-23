@@ -1,30 +1,21 @@
-angular.module 'respresReadingPlan'
-  .controller 'MainController', ($timeout, webDevTec, toastr) ->
+do (ng = angular) ->
+
+  MainController = ['moment', 'ReadingPlanData', (moment, ReadingPlanData) ->
     'ngInject'
     vm = this
-    activate = ->
-      getWebDevTec()
-      $timeout (->
-        vm.classAnimation = 'rubberBand'
-        return
-      ), 4000
-      return
 
-    showToastr = ->
-      toastr.info 'Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>'
-      vm.classAnimation = ''
-      return
+    ReadingPlanData.load().then (data) ->
+      vm.loaded = true
+      vm.plan = data
+      vm.reading = todaysReading()
 
-    getWebDevTec = ->
-      vm.awesomeThings = webDevTec.getTec()
-      angular.forEach vm.awesomeThings, (awesomeThing) ->
-        awesomeThing.rank = Math.random()
-        return
-      return
+    todaysReading = () ->
+      today = moment()
+      vm.dateLabel = today.format('LL')
+      ReadingPlanData.dayPlan vm.plan, today.month(), today.date()
 
-    vm.awesomeThings = []
-    vm.classAnimation = ''
-    vm.creationDate = 1450833897896
-    vm.showToastr = showToastr
-    activate()
     return
+  ]
+
+  ng.module 'readingPlan'
+    .controller 'MainController', MainController

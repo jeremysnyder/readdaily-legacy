@@ -1,7 +1,7 @@
 import csv, json, copy
 
-year1_reading_file = '/Users/jeremy/Downloads/RefRes-ReadingPlan-Final/ReadingPlan2016-Table1.csv'
-year2_reading_file = '/Users/jeremy/Downloads/RefRes-ReadingPlan-Final/ReadingPlan2017-Table1.csv'
+year1_reading_file = '../data/ReadingPlan2016-Table1.csv'
+year2_reading_file = '../data/ReadingPlan2017-Table1.csv'
 
 def file_to_map(file):
     readings = {}
@@ -54,7 +54,7 @@ def pretty_readings(readings):
     return json.dumps(readings, sort_keys=True, indent=2)
 
 def write_json(readings):
-    with open('./bible-reading-plan.json','w') as f:
+    with open('../data/bible-reading-plan.json','w') as f:
         print >> f, pretty_readings(readings)
 
 year1_readings = file_to_map(year1_reading_file)

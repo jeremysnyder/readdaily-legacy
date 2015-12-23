@@ -8,7 +8,7 @@ describe 'directive navbar', () ->
   element = undefined
   timeInMs = undefined
 
-  beforeEach module 'respresReadingPlan'
+  beforeEach module 'readingPlan'
 
   beforeEach inject ($compile, $rootScope) ->
     timeInMs = new Date()
