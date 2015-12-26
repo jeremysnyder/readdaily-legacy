@@ -1,5 +1,5 @@
 angular.module 'readingPlan'
-  .config ($logProvider) ->
+  .config ['$logProvider', ($logProvider) ->
     'ngInject'
     # Enable log
     $logProvider.debugEnabled true
@@ -9,3 +9,4 @@ angular.module 'readingPlan'
     # toastrConfig.positionClass = 'toast-top-right'
     # toastrConfig.preventDuplicates = true
     # toastrConfig.progressBar = true
+  ]

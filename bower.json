@@ -13,10 +13,19 @@
     "angular-resource": "~1.4.2",
     "angular-ui-router": "~0.2.15",
     "angular-material": "~0.11.2",
-    "material-design-iconfont": "~0.0.2",
     "moment": "momentjs#~2.10.6",
     "animate.css": "~3.4.0",
-    "pouchdb": "~5.1.0"
+    "pouchdb": "~5.1.0",
+    "roboto-slab-fontface-bower": "roboto-slab-fontface#*"
+  },
+  "overrides": {
+    "roboto-slab-fontface-bower": {
+      "main": [
+        "fonts/RobotoSlab-Regular.eot",
+        "fonts/RobotoSlab-Regular.ttf",
+        "fonts/RobotoSlab-Regular.woff"
+      ]
+    }
   },
   "devDependencies": {
     "angular-mocks": "~1.4.2"

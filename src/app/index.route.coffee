@@ -1,5 +1,5 @@
 angular.module 'readingPlan'
-  .config ($stateProvider, $urlRouterProvider) ->
+  .config ['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) ->
     'ngInject'
     $stateProvider
       .state 'home',
@@ -9,3 +9,4 @@ angular.module 'readingPlan'
         controllerAs: 'vm'
 
     $urlRouterProvider.otherwise '/'
+  ]

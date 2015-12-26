@@ -1,7 +1,7 @@
 import csv, json, copy
 
-year1_reading_file = '../data/ReadingPlan2016-Table1.csv'
-year2_reading_file = '../data/ReadingPlan2017-Table1.csv'
+year1_reading_file = './ReadingPlanYear1.csv'
+year2_reading_file = './ReadingPlanYear2.csv'
 
 def file_to_map(file):
     readings = {}
