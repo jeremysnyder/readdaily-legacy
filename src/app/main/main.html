@@ -1,4 +1,4 @@
-<md-content layout="column">
+<md-content>
   <md-toolbar>
     <div class="md-toolbar-tools">
       <h2>
@@ -8,8 +8,6 @@
       <img src="assets/images/favicon-respres.png" />
     </div>
   </md-toolbar>
-</md-content>
-<md-content>
   <md-card ng-repeat="r in vm.reading">
     <md-card-header>
       <md-card-header-pre>
@@ -21,3 +19,20 @@
     </md-card-header>
   </md-card>
 </md-content>
+<md-fab-speed-dial ng-hide="vm.hidden" md-direction="up" md-open="vm.isOpen" class="md-scale md-fab-bottom-right">
+  <md-fab-trigger>
+    <md-button aria-label="menu" class="md-fab">
+      <md-icon class="material-icons step">more_vert</md-icon>
+    </md-button>
+  </md-fab-trigger>
+  <md-fab-actions>
+    <div ng-repeat="item in vm.actions">
+      <md-button aria-label="{{item.name}}" class="md-fab md-raised md-mini" ng-click="vm.changePlan(item.key)">
+        <md-tooltip md-direction="left" md-autohide="false">
+          {{item.name}}
+        </md-tooltip>
+        {{item.key}}
+      </md-button>
+    </div>
+  </md-fab-actions>
+</md-fab-speed-dial>
