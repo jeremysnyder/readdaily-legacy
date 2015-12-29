@@ -1,8 +1,18 @@
 do (ng = angular, JSON = JSON) ->
 
-  MainController = ['moment', 'ReadingPlanData', 'localStorageService', (moment, ReadingPlanData, LocalStorage) ->
+  MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog) ->
     LOCAL_STORAGE_KEY = 'readdaily.settings'
     vm = this
+
+    vm.showAbout = (ev) ->
+      alert = $mdDialog.alert()
+        .clickOutsideToClose true
+        .title 'Read Daily'
+        .textContent 'Daily reading from Resurrection OPC Reading Guide'
+        .ariaLabel('Read Daily')
+        .ok('OK')
+        .targetEvent(ev)
+      $mdDialog.show alert
 
     settings = (key, value) ->
       _settings = JSON.parse(LocalStorage.get(LOCAL_STORAGE_KEY)) || {}
@@ -25,6 +35,8 @@ do (ng = angular, JSON = JSON) ->
       settings('selectedPlan', selection)
       vm.reading = todaysReading(selection)
 
+    vm.loadScripture = ScripturePassage.load
+
     vm.actions = [
       {key: '1', name: 'All In One Year'}
       {key: '2:1', name: 'Two Year Plan - Year 1'}
@@ -33,8 +45,9 @@ do (ng = angular, JSON = JSON) ->
 
     todaysReading = (format) ->
       today = moment()
+      # today = moment('2016-02-28')
       vm.dateLabel = today.format('MMM Do')
-      fullPlan = ReadingPlanData.dayPlan vm.plan, today.month(), today.date()
+      fullPlan = ReadingPlanData.dayPlan vm.plan, today.month() + 1, today.date()
       reading = []
 
       switch format

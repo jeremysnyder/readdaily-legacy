@@ -1,7 +1,6 @@
 angular.module 'readingPlan', [
   'ngAnimate',
   'ngCookies',
-  'ngTouch',
   'ngSanitize',
   'ngMessages',
   'ngAria',
