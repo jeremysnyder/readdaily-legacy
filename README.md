@@ -6,3 +6,5 @@ Daily readings from the Two-Year Bible Reading Plan, produced jointly by [Reform
 This application is primarily built to run on smartphones, but could also be embedded into a full scale web application.
 
 You can access the latest version at [http://resurrectionopc.org/readdaily]()
+
+[![Build Status](https://travis-ci.org/jeremysnyder/readdaily.svg)](https://travis-ci.org/jeremysnyder/readdaily)
