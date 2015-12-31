@@ -71,3 +71,13 @@ describe 'data.service', () ->
     day = loadData()['02_02']
     readings = dayReadings day
     expect(readings.length).toBe 4
+
+  it 'should load a day play', () ->
+    data = loadData()
+    day1 = mockService.dayPlan data, 1, 1
+    expect(day1.day).toBe '1'
+    expect(day1.month).toBe '1'
+
+    day2 = mockService.dayPlan data, 2, 2
+    expect(day2.day).toBe '2'
+    expect(day2.month).toBe '2'
