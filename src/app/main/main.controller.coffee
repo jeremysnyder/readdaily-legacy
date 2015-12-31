@@ -8,7 +8,9 @@ do (ng = angular, JSON = JSON) ->
       alert = $mdDialog.alert()
         .clickOutsideToClose true
         .title 'Read Daily'
-        .textContent 'Daily reading from Resurrection OPC Reading Guide'
+        .htmlContent 'Daily readings from the Two-Year Bible Reading Plan, produced jointly by<br>
+                      Reformation OPC (Queens, NYC) and Resurrection OPC (State College, PA).<br>
+                      For more resources, visit <a href="http://resurrectionopc.org/resources" target="_blank">resurrectionopc.org/resources</a>'
         .ariaLabel('Read Daily')
         .ok('OK')
         .targetEvent(ev)
