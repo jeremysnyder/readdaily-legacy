@@ -1,7 +1,7 @@
 import csv, json, copy
 
-year1_reading_file = './ReadingPlanYear1.csv'
-year2_reading_file = './ReadingPlanYear2.csv'
+readers_reading_file = './ReadersBiblePlan-ReadingPlan.csv'
+verses_reading_file = './VersesReadingPlan-ReadingPlan.csv'
 
 def file_to_map(file):
     readings = {}
@@ -18,12 +18,14 @@ def file_to_map(file):
                 item["totalVerseCount"] = num(row[2])
                 if row[3]: item["otReading"] = row[3]
                 if row[4]: item["otVerseCount"] = num(row[4])
-                if row[5]: item["ntReading"] = row[5]
-                if row[6]: item["ntVerseCount"] = num(row[6])
-                if row[7]: item["psalmsReading"] = row[7]
-                if row[8]: item["psalmsVerseCount"] = num(row[8])
-                if row[9]: item["proverbsReading"] = row[9]
-                if row[10]: item["proverbsVerseCount"] = num(row[10])
+                if row[5]: item["ot2Reading"] = row[5]
+                if row[6]: item["ot2VerseCount"] = num(row[6])
+                if row[7]: item["ntReading"] = row[7]
+                if row[8]: item["ntVerseCount"] = num(row[8])
+                if row[9]: item["psalmsReading"] = row[9]
+                if row[10]: item["psalmsVerseCount"] = num(row[10])
+                if row[11]: item["proverbsReading"] = row[11]
+                if row[12]: item["proverbsVerseCount"] = num(row[12])
                 readings[key] = item
 
     return readings
@@ -53,11 +55,11 @@ def combine_readings(year1, year2):
 def pretty_readings(readings):
     return json.dumps(readings, sort_keys=True, indent=2)
 
-def write_json(readings):
-    with open('../data/bible-reading-plan.json','w') as f:
+def write_json(filename, readings):
+    with open('./{0}.json'.format(filename), 'w') as f:
         print >> f, pretty_readings(readings)
 
-year1_readings = file_to_map(year1_reading_file)
-year2_readings = file_to_map(year2_reading_file)
-all_readings = combine_readings(year1_readings, year2_readings)
-write_json(all_readings)
+verses_readings = file_to_map(verses_reading_file)
+readers_readings = file_to_map(readers_reading_file)
+write_json('verse-bible-reading-plan', verses_readings)
+write_json('reader-bible-reading-plan', readers_readings)

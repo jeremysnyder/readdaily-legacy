@@ -27,6 +27,7 @@ do (ng = angular, JSON = JSON) ->
 
 
     selectedPlan = () -> settings('selectedPlan') || '1'
+    vm.planSelection = selectedPlan()
 
     ReadingPlanData.load().then (data) ->
       vm.loaded = true
@@ -35,6 +36,7 @@ do (ng = angular, JSON = JSON) ->
 
     vm.changePlan = (selection) ->
       settings('selectedPlan', selection)
+      vm.planSelection = selection
       vm.reading = todaysReading(selection)
 
     vm.loadScripture = ScripturePassage.load
