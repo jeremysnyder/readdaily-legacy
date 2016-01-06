@@ -1,4 +1,9 @@
 header-radius = 2px
+bottom-sticky-height = 40px
+
+md-content
+  &.main
+    min-height "calc(100vh - %s)" % bottom-sticky-height
 
 md-toolbar
   .md-toolbar-tools
@@ -9,6 +14,17 @@ md-toolbar
       line-height normal
       min-height inherit
       min-width inherit
+
+  &.md-bottom-sticky
+    background-color lightgray
+    color black
+    font-size .9em
+
+    div.layout-row
+      max-height bottom-sticky-height
+
+      span
+        padding 0 10px
 
 md-card
   md-card-header
@@ -50,14 +66,7 @@ md-card
         &.center
           text-align center
 
-md-fab-trigger
-  button.md-fab.md-button:not([disabled])
-    background-color #656
-
-    &:hover
-      background-color #444
-
-md-fab-actions
-  button
-    span
-      color #111
+md-dialog
+  md-dialog-actions
+    .md-subheader-content
+      font-size .9em

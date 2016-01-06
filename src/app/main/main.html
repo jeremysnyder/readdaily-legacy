@@ -1,4 +1,4 @@
-<md-content>
+<md-content class="main">
   <md-toolbar>
     <div class="md-toolbar-tools">
       <h2>
@@ -31,20 +31,10 @@
     </md-card-header>
   </md-card>
 </md-content>
-<md-fab-speed-dial ng-hide="vm.hidden" md-direction="up" md-open="vm.isOpen" class="md-scale md-fab-bottom-right">
-  <md-fab-trigger>
-    <md-button aria-label="menu" class="md-fab">
-      {{vm.planSelection}}
-    </md-button>
-  </md-fab-trigger>
-  <md-fab-actions>
-    <div ng-repeat="item in vm.actions">
-      <md-button aria-label="{{item.name}}" class="md-fab md-raised md-mini" ng-click="vm.changePlan(item.key)">
-        <md-tooltip md-direction="left" md-autohide="false">
-          {{item.name}}
-        </md-tooltip>
-        {{item.key}}
-      </md-button>
-    </div>
-  </md-fab-actions>
-</md-fab-speed-dial>
+<md-toolbar class="md-bottom-sticky" ng-click="vm.showAbout($event)">
+  <div layout="row" layout-align="left center" flex>
+    <span>{{vm.selectedPlanTypeLabel}}</span>
+    <span flex></span>
+    <span>{{vm.selectedPlanTimeframeLabel}}</span>
+  </div>
+</md-toolbar>

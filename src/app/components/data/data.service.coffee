@@ -1,8 +1,8 @@
 do (ng = angular) ->
 
   ReadingPlanData = ['$http', '$q', ($http, $q) ->
-    load = () ->
-      $http({method: 'GET', url: 'assets/data/bible-reading-plan.json'}).then (response) ->
+    load = (type) ->
+      $http({method: 'GET', url: "assets/data/#{type}-bible-reading-plan.json"}).then (response) ->
         $q.when(response.data)
 
     padDatePart = (part) -> String("00" + part).slice(-2)

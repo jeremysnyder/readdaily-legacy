@@ -62,4 +62,4 @@ def write_json(filename, readings):
 verses_readings = file_to_map(verses_reading_file)
 readers_readings = file_to_map(readers_reading_file)
 write_json('verse-bible-reading-plan', verses_readings)
-write_json('reader-bible-reading-plan', readers_readings)
+write_json('chapter-bible-reading-plan', readers_readings)

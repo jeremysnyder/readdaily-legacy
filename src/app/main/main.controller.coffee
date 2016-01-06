@@ -1,20 +1,43 @@
 do (ng = angular, JSON = JSON) ->
 
+  DialogController = ['$scope', '$mdDialog', 'settings', ($scope, $mdDialog, settings) ->
+    ng.extend $scope, settings
+    $scope.handleAction = (action) -> $mdDialog.hide($scope)
+  ]
+
   MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog) ->
     LOCAL_STORAGE_KEY = 'readdaily.settings'
     vm = this
+    vm.version = '1.1.0'
+
+    load = () ->
+      vm.selectedPlanType = selectedPlanType()
+      vm.selectedPlanTimeframe = selectedPlanTimeframe()
+      vm.selectedPlanTypeLabel = vm.planTypeOptions[vm.selectedPlanType]
+      vm.selectedPlanTimeframeLabel = vm.planTimeframeOptions[vm.selectedPlanTimeframe]
+      vm.loaded = false
+      ReadingPlanData.load(vm.selectedPlanType).then (data) ->
+        vm.loaded = true
+        vm.plan = data
+        vm.reading = todaysReading(selectedPlanTimeframe())
+
 
     vm.showAbout = (ev) ->
-      alert = $mdDialog.alert()
-        .clickOutsideToClose true
-        .title 'Read Daily'
-        .htmlContent 'Daily readings from the Two-Year Bible Reading Plan, produced jointly by<br>
-                      Reformation OPC (Queens, NYC) and Resurrection OPC (State College, PA).<br>
-                      For more resources, visit <a href="http://resurrectionopc.org/resources" target="_blank">resurrectionopc.org/resources</a>'
-        .ariaLabel('Read Daily')
-        .ok('OK')
-        .targetEvent(ev)
-      $mdDialog.show alert
+      updateSettings = (config) ->
+        console.log config.selectedPlanType, config.selectedPlanTimeframe
+        settings('selectedPlanType', config.selectedPlanType)
+        settings('selectedPlanTimeframe', config.selectedPlanTimeframe)
+        load()
+
+      $mdDialog.show
+        controller: DialogController
+        templateUrl: 'app/main/dialog-template.html'
+        locals:
+           settings: vm
+        parent: angular.element(document.body)
+        targetEvent: ev
+        clickOutsideToClose: true
+      .then updateSettings
 
     settings = (key, value) ->
       _settings = JSON.parse(LocalStorage.get(LOCAL_STORAGE_KEY)) || {}
@@ -25,27 +48,20 @@ do (ng = angular, JSON = JSON) ->
       else
         _settings[key]
 
+    vm.planTimeframeOptions =
+      '1': 'All In 1 Year'
+      '2:1': '2yr Plan - Year 1'
+      '2:2': '2yr Plan - Year 2'
 
-    selectedPlan = () -> settings('selectedPlan') || '1'
-    vm.planSelection = selectedPlan()
+    vm.planTypeOptions =
+      'chapter': 'Chapter Based'
+      'verse': 'Verse Based'
 
-    ReadingPlanData.load().then (data) ->
-      vm.loaded = true
-      vm.plan = data
-      vm.reading = todaysReading(selectedPlan())
-
-    vm.changePlan = (selection) ->
-      settings('selectedPlan', selection)
-      vm.planSelection = selection
-      vm.reading = todaysReading(selection)
+    selectedPlanType = () -> settings('selectedPlanType') || 'verse'
+    selectedPlanTimeframe = () -> settings('selectedPlanTimeframe') || '2:1'
+    load()
 
     vm.loadScripture = ScripturePassage.load
-
-    vm.actions = [
-      {key: '1', name: 'All In One Year'}
-      {key: '2:1', name: 'Two Year Plan - Year 1'}
-      {key: '2:2', name: 'Two Year Plan - Year 2'}
-    ]
 
     todaysReading = (format) ->
       today = moment()

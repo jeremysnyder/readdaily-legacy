@@ -1,0 +1,34 @@
+<md-dialog>
+  <form>
+    <md-dialog-content>
+      <md-tabs md-dynamic-height md-border-bottom md-center-tabs md-stretch-tabs="always">
+        <md-tab label="options">
+          <md-content class="md-padding">
+            <div layout="column">
+              <md-subheader class="md-no-sticky">Plan Type</md-subheader>
+              <md-radio-group ng-model="selectedPlanType">
+                <md-radio-button value="{{k}}" ng-repeat="(k,v) in planTypeOptions">{{v}}</md-radio-button>
+              </md-radio-group>
+              <md-subheader class="md-no-sticky">Timeframe</md-subheader>
+              <md-radio-group ng-model="selectedPlanTimeframe">
+                <md-radio-button value="{{k}}" ng-repeat="(k,v) in planTimeframeOptions">{{v}}</md-radio-button>
+              </md-radio-group>
+            </div>
+          </md-content>
+        </md-tab>
+        <md-tab label="about">
+          <md-content class="md-padding">
+            Daily readings from the Two-Year Bible Reading Plan, produced jointly by
+            Reformation OPC (Queens, NYC) and Resurrection OPC (State College, PA).
+            For more resources, visit <a href="http://resurrectionopc.org/resources" target="_blank">resurrectionopc.org/resources</a>.
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-subheader class="md-no-sticky">Read Daily v{{version}}</md-subheader>
+      <span flex></span>
+      <md-button ng-click="handleAction('ok')">Ok</md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
