@@ -19,8 +19,7 @@ do (ng = angular, JSON = JSON) ->
       ReadingPlanData.load(vm.selectedPlanType).then (data) ->
         vm.loaded = true
         vm.plan = data
-        vm.reading = todaysReading(selectedPlanTimeframe())
-
+        updateTodaysReading()
 
     vm.showAbout = (ev) ->
       updateSettings = (config) ->
@@ -63,9 +62,11 @@ do (ng = angular, JSON = JSON) ->
 
     vm.loadScripture = ScripturePassage.load
 
-    todaysReading = (format) ->
-      today = moment()
-      # today = moment('2016-02-28')
+    vm.currentDate = moment()
+
+    updateTodaysReading = () ->
+      format = selectedPlanTimeframe()
+      today = vm.currentDate
       vm.dateLabel = today.format('MMM Do')
       fullPlan = ReadingPlanData.dayPlan vm.plan, today.month() + 1, today.date()
       reading = []
@@ -82,7 +83,23 @@ do (ng = angular, JSON = JSON) ->
       reading.push {name: 'PS', verses: fullPlan.psalmsReading} if fullPlan.psalmsReading
       reading.push {name: 'PRV', verses: fullPlan.proverbsReading} if fullPlan.proverbsReading
       reading.push {name: 'NT', verses: fullPlan.ntReading} if fullPlan.ntReading
-      reading
+
+      vm.reading = reading
+
+    vm.today = () ->
+      vm.currentDate = moment()
+      updateTodaysReading()
+      
+    vm.previousDay = () ->
+      moveCurrentDate -1
+      updateTodaysReading()
+
+    vm.nextDay = () ->
+      moveCurrentDate 1
+      updateTodaysReading()
+
+    moveCurrentDate = (direction) ->
+      vm.currentDate = vm.currentDate.add direction, 'd'
 
     return
   ]
