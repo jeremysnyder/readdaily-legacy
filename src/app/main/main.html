@@ -1,11 +1,21 @@
 <md-content class="main">
   <md-toolbar>
     <div class="md-toolbar-tools">
-      <h2>
-        <span>Read Daily - {{vm.dateLabel}}</span>
-      </h2>
-      <span flex></span>
-      <md-button class="md-raised" ng-click="vm.showAbout($event)">R</md-button>
+      <div layout="row" layout-align="left center" flex>
+        <a href="#" ng-click="vm.previousDay()">
+          <md-icon class="material-icons">navigate_before</md-icon>
+        </a>
+        <span flex></span>
+        <span>
+          <a href="#" ng-click="vm.today()">
+            <span class="logo">R</span>ead Daily - {{vm.dateLabel}}
+          </a>
+        </span>
+        <span flex></span>
+        <a href="#" ng-click="vm.nextDay()">
+          <md-icon class="material-icons">navigate_next</md-icon>
+        </a>
+      </div>
     </div>
   </md-toolbar>
   <md-card ng-repeat="r in vm.reading" ng-if="vm.reading.length">
@@ -34,6 +44,8 @@
 <md-toolbar class="md-bottom-sticky" ng-click="vm.showAbout($event)">
   <div layout="row" layout-align="left center" flex>
     <span>{{vm.selectedPlanTypeLabel}}</span>
+    <span flex></span>
+    <md-button class="md-raised logo">R</md-button>
     <span flex></span>
     <span>{{vm.selectedPlanTimeframeLabel}}</span>
   </div>
