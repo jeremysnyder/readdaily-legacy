@@ -18,7 +18,7 @@
       </div>
     </div>
   </md-toolbar>
-  <md-card ng-repeat="r in vm.reading" ng-if="vm.reading.length">
+  <md-card ng-repeat="r in vm.reading" ng-if="vm.loaded && vm.reading.length">
     <md-card-header>
       <md-card-header-pre>
         <h3>{{r.name}}</h3>

@@ -5,10 +5,10 @@ do (ng = angular, JSON = JSON) ->
     $scope.handleAction = (action) -> $mdDialog.hide($scope)
   ]
 
-  MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog) ->
+  MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', '$timeout', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog, $timeout) ->
     LOCAL_STORAGE_KEY = 'readdaily.settings'
     vm = this
-    vm.version = '1.1.0'
+    vm.version = '1.1.1'
 
     load = () ->
       vm.selectedPlanType = selectedPlanType()
@@ -89,7 +89,7 @@ do (ng = angular, JSON = JSON) ->
     vm.today = () ->
       vm.currentDate = moment()
       updateTodaysReading()
-      
+
     vm.previousDay = () ->
       moveCurrentDate -1
       updateTodaysReading()
