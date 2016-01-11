@@ -5,7 +5,7 @@ verses_reading_file = './VersesReadingPlan-ReadingPlan.csv'
 
 def file_to_map(file):
     readings = {}
-    with open(file, 'rb') as f:
+    with open(file, 'r') as f:
         r = csv.reader(f)
         for row in r:
             item = {}
@@ -26,7 +26,9 @@ def file_to_map(file):
                 if row[10]: item["psalmsVerseCount"] = num(row[10])
                 if row[11]: item["proverbsReading"] = row[11]
                 if row[12]: item["proverbsVerseCount"] = num(row[12])
-                readings[key] = item
+
+                # Remove keys with the value zero
+                readings[key] = dict((k, v) for k, v in item.items() if not isinstance(v, int))
 
     return readings
 
@@ -57,7 +59,7 @@ def pretty_readings(readings):
 
 def write_json(filename, readings):
     with open('./{0}.json'.format(filename), 'w') as f:
-        print >> f, pretty_readings(readings)
+        print(pretty_readings(readings), file = f)
 
 verses_readings = file_to_map(verses_reading_file)
 readers_readings = file_to_map(readers_reading_file)
