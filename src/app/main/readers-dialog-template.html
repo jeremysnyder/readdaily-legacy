@@ -1,0 +1,14 @@
+<md-dialog>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Open Reading in...</h2>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <br>
+    <md-button ng-repeat="reader in readers" class="md-raised" ng-click="openReader(reader)">{{reader.title}}</md-button>
+  </md-dialog-content>
+  <md-dialog-actions layout="row">
+    <md-button ng-click="cancel()">Cancel</md-button>
+  </md-dialog-actions>
+</md-dialog>

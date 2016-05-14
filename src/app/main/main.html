@@ -27,7 +27,7 @@
         <span class="md-title">{{r.verses}}</span>
       </md-card-header-text>
       <md-card-header-action>
-        <md-button ng-click="vm.loadScripture(r.verses)">
+        <md-button ng-click="vm.showReaderChoice(r.verses, $event)">
           <md-icon class="material-icons">library_books</md-icon>
         </md-button>
       </md-card-header-action>

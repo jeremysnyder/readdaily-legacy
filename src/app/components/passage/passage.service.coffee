@@ -1,10 +1,13 @@
 do (ng = angular) ->
 
   ScripturePassage = ['$window', ($window) ->
-    load = (passage) ->
-      $window.open "http://www.esvbible.org/#{$window.encodeURIComponent(passage)}/", '_blank'
+    readers = []
+    registerReader = (reader) ->
+      readers.push reader
 
-    {load: load}
+    {} =
+      register: registerReader
+      readers: readers
   ]
 
   ng.module 'readingPlan'

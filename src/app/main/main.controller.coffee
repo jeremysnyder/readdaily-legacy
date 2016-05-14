@@ -1,8 +1,14 @@
 do (ng = angular, JSON = JSON) ->
 
-  DialogController = ['$scope', '$mdDialog', 'settings', ($scope, $mdDialog, settings) ->
+  SettingsDialogController = ['$scope', '$mdDialog', 'settings', ($scope, $mdDialog, settings) ->
     ng.extend $scope, settings
     $scope.handleAction = (action) -> $mdDialog.hide($scope)
+  ]
+
+  ReaderDialogController = ['$scope', '$mdDialog', 'ScripturePassage', 'verses', ($scope, $mdDialog, ScripturePassage, verses) ->
+    $scope.cancel = () -> $mdDialog.hide $scope
+    $scope.readers = ScripturePassage.readers
+    $scope.openReader = (reader) -> reader.load verses
   ]
 
   MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', '$timeout', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog, $timeout) ->
@@ -29,14 +35,27 @@ do (ng = angular, JSON = JSON) ->
         load()
 
       $mdDialog.show
-        controller: DialogController
-        templateUrl: 'app/main/dialog-template.html'
+        controller: SettingsDialogController
+        templateUrl: 'app/main/settings-dialog-template.html'
         locals:
            settings: vm
         parent: angular.element(document.body)
         targetEvent: ev
         clickOutsideToClose: true
       .then updateSettings
+
+    vm.showReaderChoice = (verses, ev) ->
+      if ScripturePassage.readers.length == 1
+        ScripturePassage.readers[0].load verses
+      else
+        $mdDialog.show
+          controller: ReaderDialogController
+          templateUrl: 'app/main/readers-dialog-template.html'
+          locals:
+             verses: verses
+          parent: angular.element(document.body)
+          targetEvent: ev
+          clickOutsideToClose: true
 
     settings = (key, value) ->
       _settings = JSON.parse(LocalStorage.get(LOCAL_STORAGE_KEY)) || {}
@@ -59,8 +78,6 @@ do (ng = angular, JSON = JSON) ->
     selectedPlanType = () -> settings('selectedPlanType') || 'verse'
     selectedPlanTimeframe = () -> settings('selectedPlanTimeframe') || '2:1'
     load()
-
-    vm.loadScripture = ScripturePassage.load
 
     vm.currentDate = moment()
 
