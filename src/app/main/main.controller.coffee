@@ -14,7 +14,31 @@ do (ng = angular, JSON = JSON) ->
   MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', '$timeout', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog, $timeout) ->
     LOCAL_STORAGE_KEY = 'readdaily.settings'
     vm = this
-    vm.version = '1.1.1'
+    vm.version = '1.2.0'
+    vm.currentDate = moment()
+
+    updateTodaysReading = () ->
+      format = selectedPlanTimeframe()
+      today = vm.currentDate
+      vm.dateLabel = today.format('MMM Do')
+      ReadingPlanData.dayPlan(vm.selectedPlanType, today.month() + 1, today.date()).then (fullPlan) ->
+        reading = []
+
+        switch format
+          when '1'
+            reading.push {name: 'OT1', verses: fullPlan.otReading} if fullPlan.otReading
+            reading.push {name: 'OT2', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
+          when '2:1'
+            reading.push {name: 'OT', verses: fullPlan.otReading} if fullPlan.otReading
+          when '2:2'
+            reading.push {name: 'OT', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
+
+        reading.push {name: 'PS', verses: fullPlan.psalmsReading} if fullPlan.psalmsReading
+        reading.push {name: 'PRV', verses: fullPlan.proverbsReading} if fullPlan.proverbsReading
+        reading.push {name: 'NT', verses: fullPlan.ntReading} if fullPlan.ntReading
+
+        vm.reading = reading
+        vm.loaded = true
 
     load = () ->
       vm.selectedPlanType = selectedPlanType()
@@ -22,10 +46,10 @@ do (ng = angular, JSON = JSON) ->
       vm.selectedPlanTypeLabel = vm.planTypeOptions[vm.selectedPlanType]
       vm.selectedPlanTimeframeLabel = vm.planTimeframeOptions[vm.selectedPlanTimeframe]
       vm.loaded = false
-      ReadingPlanData.load(vm.selectedPlanType).then (data) ->
-        vm.loaded = true
-        vm.plan = data
-        updateTodaysReading()
+      # ReadingPlanData.dayPlan(vm.selectedPlanType).then (data) ->
+      #   vm.loaded = true
+      #   vm.plan = data
+      updateTodaysReading()
 
     vm.showAbout = (ev) ->
       updateSettings = (config) ->
@@ -78,30 +102,6 @@ do (ng = angular, JSON = JSON) ->
     selectedPlanType = () -> settings('selectedPlanType') || 'verse'
     selectedPlanTimeframe = () -> settings('selectedPlanTimeframe') || '2:1'
     load()
-
-    vm.currentDate = moment()
-
-    updateTodaysReading = () ->
-      format = selectedPlanTimeframe()
-      today = vm.currentDate
-      vm.dateLabel = today.format('MMM Do')
-      fullPlan = ReadingPlanData.dayPlan vm.plan, today.month() + 1, today.date()
-      reading = []
-
-      switch format
-        when '1'
-          reading.push {name: 'OT1', verses: fullPlan.otReading} if fullPlan.otReading
-          reading.push {name: 'OT2', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
-        when '2:1'
-          reading.push {name: 'OT', verses: fullPlan.otReading} if fullPlan.otReading
-        when '2:2'
-          reading.push {name: 'OT', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
-
-      reading.push {name: 'PS', verses: fullPlan.psalmsReading} if fullPlan.psalmsReading
-      reading.push {name: 'PRV', verses: fullPlan.proverbsReading} if fullPlan.proverbsReading
-      reading.push {name: 'NT', verses: fullPlan.ntReading} if fullPlan.ntReading
-
-      vm.reading = reading
 
     vm.today = () ->
       vm.currentDate = moment()

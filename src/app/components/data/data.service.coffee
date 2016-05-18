@@ -1,18 +1,15 @@
 do (ng = angular) ->
 
   ReadingPlanData = ['$http', '$q', ($http, $q) ->
-    load = (type) ->
-      $http({method: 'GET', url: "assets/data/#{type}-bible-reading-plan.json"}).then (response) ->
+    padDatePart = (part) -> String("00" + part).slice(-2)
+    keyFor = (month, day) -> "#{padDatePart(month)}_#{padDatePart(day)}"
+
+    dayPlan = (type, month, day) ->
+      dayKey = keyFor month, day
+      $http({method: 'GET', url: "assets/data/#{type}-bible-reading-plan/#{dayKey}.json"}).then (response) ->
         $q.when(response.data)
 
-    padDatePart = (part) -> String("00" + part).slice(-2)
-
-    key = (month, day) -> "#{padDatePart(month)}_#{padDatePart(day)}"
-
-    dayPlan = (data, month, day) -> data[key(month, day)]
-
     {} =
-      load: load
       dayPlan: dayPlan
   ]
 

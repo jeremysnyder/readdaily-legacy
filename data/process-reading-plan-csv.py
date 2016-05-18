@@ -1,4 +1,4 @@
-import csv, json, copy
+import csv, json, copy, os
 
 readers_reading_file = './ReadersBiblePlan-ReadingPlan.csv'
 verses_reading_file = './VersesReadingPlan-ReadingPlan.csv'
@@ -58,8 +58,11 @@ def pretty_readings(readings):
     return json.dumps(readings, sort_keys=True, indent=2)
 
 def write_json(filename, readings):
-    with open('./{0}.json'.format(filename), 'w') as f:
-        print(pretty_readings(readings), file = f)
+    reading_dir = './{0}'.format(filename)
+    os.mkdir(reading_dir)
+    for k, v in readings.items():
+        with open('./{0}/{1}.json'.format(reading_dir, k), 'w') as f:
+            print(pretty_readings(v), file = f)
 
 verses_readings = file_to_map(verses_reading_file)
 readers_readings = file_to_map(readers_reading_file)
