@@ -1,6 +1,6 @@
 do (ng = angular) ->
 
-  YouVersionBibleReader = ['$window', 'osisCodes', ($window, osisCodes) ->
+  YouVersionBibleReader = ($window, osisCodes) ->
 
     toYouVersionFormat = (passage) ->
       details = startToEnd passage
@@ -51,10 +51,9 @@ do (ng = angular) ->
     {} =
       load: load
       title: 'YouVersion Bible App'
-  ]
 
   ng.module 'readingPlan'
-    .factory 'YouVersionBibleReader', YouVersionBibleReader
+    .factory 'YouVersionBibleReader', ['$window', 'osisCodes', YouVersionBibleReader]
     .run ['ScripturePassage', 'YouVersionBibleReader', (ScripturePassage, YouVersionBibleReader) ->
       ScripturePassage.register YouVersionBibleReader
     ]

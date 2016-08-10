@@ -11,7 +11,7 @@ do (ng = angular, JSON = JSON) ->
     $scope.openReader = (reader) -> reader.load verses
   ]
 
-  MainController = ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', '$timeout', (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog, $timeout) ->
+  MainController = (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog, $timeout) ->
     LOCAL_STORAGE_KEY = 'readdaily.settings'
     vm = this
     vm.version = '1.2.0'
@@ -46,9 +46,6 @@ do (ng = angular, JSON = JSON) ->
       vm.selectedPlanTypeLabel = vm.planTypeOptions[vm.selectedPlanType]
       vm.selectedPlanTimeframeLabel = vm.planTimeframeOptions[vm.selectedPlanTimeframe]
       vm.loaded = false
-      # ReadingPlanData.dayPlan(vm.selectedPlanType).then (data) ->
-      #   vm.loaded = true
-      #   vm.plan = data
       updateTodaysReading()
 
     vm.showAbout = (ev) ->
@@ -62,7 +59,7 @@ do (ng = angular, JSON = JSON) ->
         controller: SettingsDialogController
         templateUrl: 'app/main/settings-dialog-template.html'
         locals:
-           settings: vm
+          settings: vm
         parent: angular.element(document.body)
         targetEvent: ev
         clickOutsideToClose: true
@@ -76,7 +73,7 @@ do (ng = angular, JSON = JSON) ->
           controller: ReaderDialogController
           templateUrl: 'app/main/readers-dialog-template.html'
           locals:
-             verses: verses
+            verses: verses
           parent: angular.element(document.body)
           targetEvent: ev
           clickOutsideToClose: true
@@ -119,7 +116,6 @@ do (ng = angular, JSON = JSON) ->
       vm.currentDate = vm.currentDate.add direction, 'd'
 
     return
-  ]
 
   ng.module 'readingPlan'
-    .controller 'MainController', MainController
+    .controller 'MainController', ['moment', 'ReadingPlanData', 'localStorageService', 'ScripturePassage', '$mdDialog', '$timeout', MainController]

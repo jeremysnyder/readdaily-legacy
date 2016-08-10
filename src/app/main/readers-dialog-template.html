@@ -6,7 +6,7 @@
   </md-toolbar>
   <md-dialog-content>
     <br>
-    <md-button ng-repeat="reader in readers" class="md-raised" ng-click="openReader(reader)">{{reader.title}}</md-button>
+    <md-button ng-repeat="reader in readers" class="md-raised" ng-click="openReader(reader)" style="width: 95%">{{reader.title}}</md-button>
   </md-dialog-content>
   <md-dialog-actions layout="row">
     <md-button ng-click="cancel()">Cancel</md-button>
