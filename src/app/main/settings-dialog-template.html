@@ -5,8 +5,8 @@
         <md-tab label="options">
           <md-content class="md-padding">
             <div layout="column">
-              <md-subheader class="md-no-sticky">Plan Type</md-subheader>
-              <md-radio-group ng-model="selectedPlanType">
+              <md-subheader class="md-no-sticky" ng-show="planTypeOptions.length > 1">Plan Type</md-subheader>
+              <md-radio-group ng-model="selectedPlanType" ng-show="planTypeOptions.length > 1">
                 <md-radio-button value="{{k}}" ng-repeat="(k,v) in planTypeOptions">{{v}}</md-radio-button>
               </md-radio-group>
               <md-subheader class="md-no-sticky">Timeframe</md-subheader>

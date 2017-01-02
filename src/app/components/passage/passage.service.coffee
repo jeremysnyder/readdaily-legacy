@@ -1,6 +1,6 @@
 do (ng = angular) ->
 
-  ScripturePassage = ($window) ->
+  ScripturePassage = () ->
     readers = []
     registerReader = (reader) ->
       readers.push reader
@@ -10,4 +10,4 @@ do (ng = angular) ->
       readers: readers
 
   ng.module 'readingPlan'
-    .factory 'ScripturePassage', ['$window', ScripturePassage]
+    .factory 'ScripturePassage', [ScripturePassage]

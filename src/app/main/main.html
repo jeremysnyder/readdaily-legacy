@@ -43,7 +43,7 @@
 </md-content>
 <md-toolbar class="md-bottom-sticky" ng-click="vm.showAbout($event)">
   <div layout="row" layout-align="left center" flex>
-    <span>{{vm.selectedPlanTypeLabel}}</span>
+    <span ng-show="vm.planTypeOptions.length > 1">{{vm.selectedPlanTypeLabel}}</span>
     <span flex></span>
     <md-button class="md-raised logo">R</md-button>
     <span flex></span>

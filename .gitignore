@@ -6,3 +6,4 @@ coverage/
 .tmp/
 dist/
 src/assets/data/*reading-plan
+data/chapter-bible-reading-plan

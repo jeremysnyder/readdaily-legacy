@@ -14,7 +14,7 @@ do (ng = angular, JSON = JSON) ->
   MainController = (moment, ReadingPlanData, LocalStorage, ScripturePassage, $mdDialog, $timeout) ->
     LOCAL_STORAGE_KEY = 'readdaily.settings'
     vm = this
-    vm.version = '1.2.0'
+    vm.version = '1.3.0'
     vm.currentDate = moment()
 
     updateTodaysReading = () ->
@@ -34,8 +34,7 @@ do (ng = angular, JSON = JSON) ->
             reading.push {name: 'OT', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
 
         reading.push {name: 'PS', verses: fullPlan.psalmsReading} if fullPlan.psalmsReading
-        reading.push {name: 'PRV', verses: fullPlan.proverbsReading} if fullPlan.proverbsReading
-        reading.push {name: 'NT', verses: fullPlan.ntReading} if fullPlan.ntReading
+        reading.push {name: 'NT/PRV', verses: fullPlan.ntProverbsReading} if fullPlan.ntProverbsReading
 
         vm.reading = reading
         vm.loaded = true
@@ -94,9 +93,8 @@ do (ng = angular, JSON = JSON) ->
 
     vm.planTypeOptions =
       'chapter': 'Chapter Based'
-      'verse': 'Verse Based'
 
-    selectedPlanType = () -> settings('selectedPlanType') || 'verse'
+    selectedPlanType = () -> settings('selectedPlanType') || 'chapter'
     selectedPlanTimeframe = () -> settings('selectedPlanTimeframe') || '2:1'
     load()
 

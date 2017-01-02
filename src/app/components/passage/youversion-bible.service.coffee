@@ -55,5 +55,5 @@ do (ng = angular) ->
   ng.module 'readingPlan'
     .factory 'YouVersionBibleReader', ['$window', 'osisCodes', YouVersionBibleReader]
     .run ['ScripturePassage', 'YouVersionBibleReader', (ScripturePassage, YouVersionBibleReader) ->
-      ScripturePassage.register YouVersionBibleReader
+      # ScripturePassage.register YouVersionBibleReader
     ]

@@ -99,3 +99,7 @@ describe 'data.service', () ->
       .respond chapterPlan['02_02']
     day = loadData('chapter', 2, 2)
     expect(day.otReading).toBe 'Genesis 2'
+
+  it 'should find the proper reading days', () ->
+    day = moment('1/1/2017')
+    expect(mockService.readingDay(day)).toBe 1
