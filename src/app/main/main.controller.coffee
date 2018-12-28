@@ -20,21 +20,22 @@ do (ng = angular, JSON = JSON) ->
     updateTodaysReading = () ->
       format = selectedPlanTimeframe()
       today = vm.currentDate
-      vm.dateLabel = today.format('MMM Do')
-      ReadingPlanData.dayPlan(vm.selectedPlanType, today.month() + 1, today.date()).then (fullPlan) ->
+      vm.dateLabel = today.format('ddd, MMMM Do')
+      ReadingPlanData.dayPlan(vm.selectedPlanType, today).then (fullPlan) ->
         reading = []
 
         switch format
           when '1'
-            reading.push {name: 'OT1', verses: fullPlan.otReading} if fullPlan.otReading
-            reading.push {name: 'OT2', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
+            reading.push {name: 'Old Testament 1', verses: fullPlan.otReading} if fullPlan.otReading
+            reading.push {name: 'Old Testament 2', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
           when '2:1'
-            reading.push {name: 'OT', verses: fullPlan.otReading} if fullPlan.otReading
+            reading.push {name: 'Old Testament', verses: fullPlan.otReading} if fullPlan.otReading
           when '2:2'
-            reading.push {name: 'OT', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
+            reading.push {name: 'Old Testament', verses: fullPlan.ot2Reading} if fullPlan.ot2Reading
 
-        reading.push {name: 'PS', verses: fullPlan.psalmsReading} if fullPlan.psalmsReading
-        reading.push {name: 'NT/PRV', verses: fullPlan.ntProverbsReading} if fullPlan.ntProverbsReading
+        reading.push {name: 'Psalms', verses: fullPlan.psalmsReading} if fullPlan.psalmsReading
+        reading.push {name: 'Gospels/Acts/Proverbs', verses: fullPlan.gapReading} if fullPlan.gapReading
+        reading.push {name: 'Letters', verses: fullPlan.letterReading} if fullPlan.letterReading
 
         vm.reading = reading
         vm.loaded = true

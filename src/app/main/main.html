@@ -6,9 +6,9 @@
           <md-icon class="material-icons">navigate_before</md-icon>
         </a>
         <span flex></span>
-        <span>
+        <span class="toolbar-title">
           <a href="#" ng-click="vm.today()">
-            <span class="logo">R</span>ead Daily - {{vm.dateLabel}}
+            <span class="logo">R</span>ead Daily <br> {{vm.dateLabel}}
           </a>
         </span>
         <span flex></span>
@@ -23,15 +23,16 @@
       <md-card-header-pre>
         <h3>{{r.name}}</h3>
       </md-card-header-pre>
-      <md-card-header-text>
-        <span class="md-title">{{r.verses}}</span>
-      </md-card-header-text>
-      <md-card-header-action>
-        <md-button ng-click="vm.showReaderChoice(r.verses, $event)">
-          <md-icon class="material-icons">library_books</md-icon>
-        </md-button>
-      </md-card-header-action>
     </md-card-header>
+    <md-card-content layout="row" layout-align="space-between">
+      <div layout="row" layout-align="left center" flex>
+        <span class="md-title">{{r.verses}}</span>
+        <span flex></span>
+        <md-button ng-click="vm.showReaderChoice(r.verses, $event)">
+          <md-icon class="material-icons">library_books</md-icon> Read
+        </md-button>
+      </div>
+    </md-card-content>
   </md-card>
   <md-card ng-if="!vm.reading.length">
     <md-card-header>
@@ -43,10 +44,8 @@
 </md-content>
 <md-toolbar class="md-bottom-sticky" ng-click="vm.showAbout($event)">
   <div layout="row" layout-align="left center" flex>
-    <span ng-show="vm.planTypeOptions.length > 1">{{vm.selectedPlanTypeLabel}}</span>
     <span flex></span>
-    <md-button class="md-raised logo">R</md-button>
+    <md-button class="md-raised">{{vm.selectedPlanTimeframeLabel}}</md-button>
     <span flex></span>
-    <span>{{vm.selectedPlanTimeframeLabel}}</span>
   </div>
 </md-toolbar>

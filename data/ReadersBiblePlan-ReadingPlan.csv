@@ -1,365 +1,366 @@
-Week,Day,OT 1,OT 2,NT/Proverbs,Psalms
-1,Sun,,,,
-,Mon,Genesis 1,Job 1,Proverbs 1,
-,Tue,Genesis 2,Job 2,Matthew 1,Psalm 1
-,Wed,Genesis 3,Job 3,Matthew 2,
-,Thu,Genesis 4,Job 4,Matthew 3,Psalm 2
-,Fri,Genesis 5,Job 5,Matthew 4,
-,Sat,Genesis 6,Job 6,Matthew 5,Psalm 3
-2,Sun,,,,
-,Mon,Genesis 7-8,Job 7-8,Matthew 6,
-,Tue,Genesis 9,Job 9,Matthew 7,Psalm 4
-,Wed,Genesis 10,Job 10,Matthew 8,
-,Thu,Genesis 11,Job 11,Matthew 9,Psalm 5
-,Fri,Genesis 12,Job 12,Matthew 10,
-,Sat,Genesis 13,Job 13,Matthew 11,Psalm 6
-3,Sun,,,,
-,Mon,Genesis 14-15,Job 14-15,Matthew 12,
-,Tue,Genesis 16,Job 16,Matthew 13,Psalm 7
-,Wed,Genesis 17,Job 17,Matthew 14,
-,Thu,Genesis 18,Job 18,Matthew 15,Psalm 8
-,Fri,Genesis 19,Job 19,Matthew 16,
-,Sat,Genesis 20,Job 20,Matthew 17,Psalm 9
-4,Sun,,,,
-,Mon,Genesis 21-22,Job 21-22,Matthew 18,
-,Tue,Genesis 23,Job 23,Matthew 19,Psalm 10
-,Wed,Genesis 24,Job 24,Matthew 20,
-,Thu,Genesis 25,Job 25,Matthew 21,Psalm 11
-,Fri,Genesis 26,Job 26,Matthew 22,
-,Sat,Genesis 27,Job 27,Matthew 23,Psalm 12
-5,Sun,,,,
-,Mon,Genesis 28-29,Job 28-29,Matthew 24,
-,Tue,Genesis 30,Job 30,Matthew 25,Psalm 13
-,Wed,Genesis 31,Job 31,Matthew 26,
-,Thu,Genesis 32,Job 32,Matthew 27,Psalm 14
-,Fri,Genesis 33,Job 33,Matthew 28,
-,Sat,Genesis 34,Job 34,,Psalm 15
-6,Sun,,,,
-,Mon,Genesis 35-36,Job 35-36,Proverbs 2,
-,Tue,Genesis 37,Job 37,Mark 1,Psalm 16
-,Wed,Genesis 38,Job 38,Mark 2,
-,Thu,Genesis 39,Job 39,Mark 3,Psalm 17
-,Fri,Genesis 40,Job 40,Mark 4,
-,Sat,Genesis 41,Job 41-42,Mark 5,Psalm 18
-7,Sun,,,,
-,Mon,Genesis 42-43,Ecclesiastes 1,Mark 6,
-,Tue,Genesis 44,Ecclesiastes 2,Mark 7,Psalm 19
-,Wed,Genesis 45,Ecclesiastes 3,Mark 8,
-,Thu,Genesis 46,Ecclesiastes 4,Mark 9,Psalm 20
-,Fri,Genesis 47,Ecclesiastes 5,Mark 10,
-,Sat,Genesis 48,Ecclesiastes 6,Mark 11,Psalm 21
-8,Sun,,,,
-,Mon,Genesis 49,Ecclesiastes 7,Mark 12,
-,Tue,Genesis 50,Ecclesiastes 8,Mark 13,Psalm 22
-,Wed,Exodus 1,Ecclesiastes 9,Mark 14,
-,Thu,Exodus 2,Ecclesiastes 10,Mark 15-16,Psalm 23
-,Fri,Exodus 3,Ecclesiastes 11,,
-,Sat,Exodus 4,Ecclesiastes 12,Proverbs 3,Psalm 24
-9,Sun,,,,
-,Mon,Exodus 5-6,Song of Solomon 1-2,Luke 1,
-,Tue,Exodus 7,Song of Solomon 3-4,Luke 2,Psalm 25
-,Wed,Exodus 8,Song of Solomon 5-6,Luke 3,
-,Thu,Exodus 9,Song of Solomon 7-8,Luke 4,Psalm 26
-,Fri,Exodus 10,Joel 1,Luke 5,
-,Sat,Exodus 11,Joel 2-3,Luke 6,Psalm 27
-10,Sun,,,,
-,Mon,Exodus 12-13,Amos 1-2,Luke 7,
-,Tue,Exodus 14,Amos 3-4,Luke 8,Psalm 28
-,Wed,Exodus 15,Amos 5,Luke 9,
-,Thu,Exodus 16,Amos 6-7,Luke 10,Psalm 29
-,Fri,Exodus 17,Amos 8-9,Luke 11,
-,Sat,Exodus 18-19,,Luke 12,Psalm 30
-11,Sun,,,,
-,Mon,Exodus 20,Hosea 1,Luke 13,
-,Tue,Exodus 21,Hosea 2,Luke 14,Psalm 31
-,Wed,Exodus 22,Hosea 3-4,Luke 15,
-,Thu,Exodus 23,Hosea 5,Luke 16,Psalm 32
-,Fri,Exodus 24,Hosea 6-7,Luke 17,
-,Sat,Exodus 25,Hosea 8,Luke 18,Psalm 33
-12,Sun,,,,
-,Mon,Exodus 26-27,Hosea 9,Luke 19,
-,Tue,Exodus 28,Hosea 10,Luke 20,Psalm 34
-,Wed,Exodus 29,Hosea 11-12,Luke 21,
-,Thu,Exodus 30,Hosea 13,Luke 22,Psalm 35
-,Fri,Exodus 31,Hosea 14,Luke 23,
-,Sat,Exodus 32,,Luke 24,Psalm 36
-13,Sun,,,,
-,Mon,Exodus 33-34,Jonah 1-2,Acts 1,
-,Tue,Exodus 35,Jonah 3-4,Acts 2,Psalm 37
-,Wed,Exodus 36,Micah 1-2,Acts 3,
-,Thu,Exodus 37,Micah 3-4,Acts 4,Psalm 38
-,Fri,Exodus 38,Micah 5-6,Acts 5,
-,Sat,Exodus 39-40,Micah 7,Acts 6,Psalm 39
-14,Sun,,,,
-,Mon,Leviticus 1,1 Chronicles 1,Acts 7,
-,Tue,Leviticus 2,1 Chronicles 2,Acts 8,Psalm 40
-,Wed,Leviticus 3,1 Chronicles 3,Acts 9,
-,Thu,Leviticus 4,1 Chronicles 4,Acts 10,Psalm 41
-,Fri,Leviticus 5-6,1 Chronicles 5,Acts 11,
-,Sat,Leviticus 7,1 Chronicles 6,Acts 12,Psalm 42
-15,Sun,,,,
-,Mon,Leviticus 8,1 Chronicles 7-8,Acts 13,
-,Tue,Leviticus 9,1 Chronicles 9,Acts 14,Psalm 43
-,Wed,Leviticus 10,1 Chronicles 10,Acts 15,
-,Thu,Leviticus 11,1 Chronicles 11,Acts 16,Psalm 44
-,Fri,Leviticus 12,1 Chronicles 12,Acts 17,
-,Sat,Leviticus 13,1 Chronicles 13-14,Acts 18,Psalm 45
-16,Sun,,,,
-,Mon,Leviticus 14,1 Chronicles 15-16,Acts 19,
-,Tue,Leviticus 15,1 Chronicles 17,Acts 20,Psalm 46
-,Wed,Leviticus 16,1 Chronicles 18,Acts 21,
-,Thu,Leviticus 17,1 Chronicles 19-20,Acts 22,Psalm 47
-,Fri,Leviticus 18,1 Chronicles 21,Acts 23,
-,Sat,Leviticus 19,1 Chronicles 22,Acts 24,Psalm 48
-17,Sun,,,,
-,Mon,Leviticus 20-21,1 Chronicles 23-24,Acts 25,
-,Tue,Leviticus 22,1 Chronicles 25,Acts 26,Psalm 49
-,Wed,Leviticus 23,1 Chronicles 26,Acts 27,
-,Thu,Leviticus 24,1 Chronicles 27,Acts 28,Psalm 50
-,Fri,Leviticus 25,1 Chronicles 28,,
-,Sat,Leviticus 26-27,1 Chronicles 29,Proverbs 4,Psalm 51
-18,Sun,,,,
-,Mon,Numbers 1,2 Chronicles 1,James 1,
-,Tue,Numbers 2,2 Chronicles 2,James 2,Psalm 52
-,Wed,Numbers 3,2 Chronicles 3-4,James 3,
-,Thu,Numbers 4,2 Chronicles 5,James 4,Psalm 53
-,Fri,Numbers 5,2 Chronicles 6,James 5,
-,Sat,Numbers 6,2 Chronicles 7,Proverbs 5,Psalm 54
-19,Sun,,,,
-,Mon,Numbers 7,2 Chronicles 8-9,Galatians 1,
-,Tue,Numbers 8,2 Chronicles 10,Galatians 2,Psalm 55
-,Wed,Numbers 9,2 Chronicles 11,Galatians 3,
-,Thu,Numbers 10,2 Chronicles 12,Galatians 4,Psalm 56
-,Fri,Numbers 11,2 Chronicles 13,Galatians 5,
-,Sat,Numbers 12,2 Chronicles 14-16,Galatians 6,Psalm 57
-20,Sun,,,,
-,Mon,Numbers 13-14,2 Chronicles 17-18,Proverbs 6,
-,Tue,Numbers 15,2 Chronicles 19,1 Thessalonians 1,Psalm 58
-,Wed,Numbers 16,2 Chronicles 20,1 Thessalonians 2,
-,Thu,Numbers 17,2 Chronicles 21,1 Thessalonians 3,Psalm 59
-,Fri,Numbers 18,2 Chronicles 22,1 Thessalonians 4,
-,Sat,Numbers 19,2 Chronicles 23,1 Thessalonians 5,Psalm 60
-21,Sun,,,,
-,Mon,Numbers 20-21,2 Chronicles 24,Proverbs 7,
-,Tue,Numbers 22,2 Chronicles 25,2 Thessalonians 1,Psalm 61
-,Wed,Numbers 23,2 Chronicles 26-27,2 Thessalonians 2,
-,Thu,Numbers 24,2 Chronicles 28,2 Thessalonians 3,Psalm 62
-,Fri,Numbers 25,2 Chronicles 29,,
-,Sat,Numbers 26-27,2 Chronicles 30,Proverbs 8,Psalm 63
-22,Sun,,,,
-,Mon,Numbers 28,2 Chronicles 31-32,1 Corinthians 1,
-,Tue,Numbers 29,2 Chronicles 33,1 Corinthians 2,Psalm 64
-,Wed,Numbers 30,2 Chronicles 34,1 Corinthians 3,
-,Thu,Numbers 31,2 Chronicles 35,1 Corinthians 4,Psalm 65
-,Fri,Numbers 32,2 Chronicles 36,1 Corinthians 5,
-,Sat,Numbers 33,Isaiah 1,1 Corinthians 6,Psalm 66
-23,Sun,,,,
-,Mon,Numbers 34-35,Isaiah 2,1 Corinthians 7,
-,Tue,Numbers 36,Isaiah 3-4,1 Corinthians 8,Psalm 67
-,Wed,Deuteronomy 1,Isaiah 5,1 Corinthians 9,
-,Thu,Deuteronomy 2,Isaiah 6,1 Corinthians 10,Psalm 68
-,Fri,Deuteronomy 3,Isaiah 7,1 Corinthians 11,
-,Sat,Deuteronomy 4,Isaiah 8-9,1 Corinthians 12,Psalm 69
-24,Sun,,,,
-,Mon,Deuteronomy 5,Isaiah 10,1 Corinthians 13,
-,Tue,Deuteronomy 6,Isaiah 11-12,1 Corinthians 14,Psalm 70
-,Wed,Deuteronomy 7,Isaiah 13,1 Corinthians 15,
-,Thu,Deuteronomy 8,Isaiah 14,1 Corinthians 16,Psalm 71
-,Fri,Deuteronomy 9,Isaiah 15-16,,
-,Sat,Deuteronomy 10-11,Isaiah 17-18,Proverbs 9,Psalm 72
-25,Sun,,,,
-,Mon,Deuteronomy 12,Isaiah 19-21,2 Corinthians 1,
-,Tue,Deuteronomy 13,Isaiah 22,2 Corinthians 2,Psalm 73
-,Wed,Deuteronomy 14,Isaiah 23,2 Corinthians 3,
-,Thu,Deuteronomy 15,Isaiah 24,2 Corinthians 4,Psalm 74
-,Fri,Deuteronomy 16,Isaiah 25,2 Corinthians 5,
-,Sat,Deuteronomy 17-18,Isaiah 26-27,2 Corinthians 6,Psalm 75
-26,Sun,,,,
-,Mon,Deuteronomy 19,Isaiah 28-29,2 Corinthians 7,
-,Tue,Deuteronomy 20,Isaiah 30,2 Corinthians 8,Psalm 76
-,Wed,Deuteronomy 21,Isaiah 31-32,2 Corinthians 9,
-,Thu,Deuteronomy 22,Isaiah 33,2 Corinthians 10,Psalm 77
-,Fri,Deuteronomy 23,Isaiah 34-35,2 Corinthians 11,
-,Sat,Deuteronomy 24-25,Isaiah 36-37,2 Corinthians 12-13,Psalm 78
-27,Sun,,,,
-,Mon,Deuteronomy 26,Isaiah 38,Proverbs 10,
-,Tue,Deuteronomy 27,Isaiah 39,Romans 1,Psalm 79
-,Wed,Deuteronomy 28,Isaiah 40,Romans 2,
-,Thu,Deuteronomy 29,Isaiah 41,Romans 3,Psalm 80
-,Fri,Deuteronomy 30,Isaiah 42,Romans 4,
-,Sat,Deuteronomy 31,Isaiah 43,Romans 5,Psalm 81
-28,Sun,,,,
-,Mon,Deuteronomy 32,Isaiah 44-45,Romans 6,
-,Tue,Deuteronomy 33-34,Isaiah 46-47,Romans 7,Psalm 82
-,Wed,Joshua 1,Isaiah 48,Romans 8,
-,Thu,Joshua 2,Isaiah 49,Romans 9,Psalm 83
-,Fri,Joshua 3,Isaiah 50-51,Romans 10,
-,Sat,Joshua 4,Isaiah 52-53,Romans 11,Psalm 84
-29,Sun,,,,
-,Mon,Joshua 5,Isaiah 54,Romans 12,
-,Tue,Joshua 6,Isaiah 55-56,Romans 13,Psalm 85
-,Wed,Joshua 7,Isaiah 57,Romans 14,
-,Thu,Joshua 8,Isaiah 58,Romans 15,Psalm 86
-,Fri,Joshua 9,Isaiah 59,Romans 16,
-,Sat,Joshua 10,Isaiah 60-61,,Psalm 87
-30,Sun,,,,
-,Mon,Joshua 11-12,Isaiah 62,Ephesians 1,
-,Tue,Joshua 13,Isaiah 63,Ephesians 2,Psalm 88
-,Wed,Joshua 14,Isaiah 64,Ephesians 3,
-,Thu,Joshua 15,Isaiah 65,Ephesians 4,Psalm 89
-,Fri,Joshua 16-17,Isaiah 66,Ephesians 5,
-,Sat,Joshua 18-19,,Ephesians 6,Psalm 90
-31,Sun,,,,
-,Mon,Joshua 20,Nahum 1,Proverbs 11,
-,Tue,Joshua 21,Nahum 2,Philippians 1,Psalm 91
-,Wed,Joshua 22,Nahum 3,Philippians 2,
-,Thu,Joshua 23,Zephaniah 1,Philippians 3,Psalm 92
-,Fri,Joshua 24,Zephaniah 2,Philippians 4,
-,Sat,,Zephaniah 3,,Psalm 93
-32,Sun,,,,
-,Mon,Judges 1,Habakkuk 1,Proverbs 12,
-,Tue,Judges 2,Habakkuk 2,Colossians 1,Psalm 94
-,Wed,Judges 3,Habakkuk 3,Colossians 2,
-,Thu,Judges 4,,Colossians 3,Psalm 95
-,Fri,Judges 5,Jeremiah 1,Colossians 4,
-,Sat,Judges 6,Jeremiah 2,,Psalm 96
-33,Sun,,,,
-,Mon,Judges 7-8,Jeremiah 3-4,Proverbs 13,
-,Tue,Judges 9,Jeremiah 5,Philemon 1,Psalm 97
-,Wed,Judges 10,Jeremiah 6,,
-,Thu,Judges 11,Jeremiah 7,Proverbs 14,Psalm 98
-,Fri,Judges 12,Jeremiah 8-9,1 Timothy 1,
-,Sat,Judges 13-14,Jeremiah 10,1 Timothy 2,Psalm 99
-34,Sun,,,,
-,Mon,Judges 15,Jeremiah 11,1 Timothy 3,
-,Tue,Judges 16,Jeremiah 12,1 Timothy 4,Psalm 100
-,Wed,Judges 17,Jeremiah 13,1 Timothy 5,
-,Thu,Judges 18,Jeremiah 14,1 Timothy 6,Psalm 101
-,Fri,Judges 19,Jeremiah 15,,
-,Sat,Judges 20-21,Jeremiah 16,Proverbs 15,Psalm 102
-35,Sun,,,,
-,Mon,Ruth 1,Jeremiah 17-18,Titus 1,
-,Tue,Ruth 2,Jeremiah 19,Titus 2,Psalm 103
-,Wed,Ruth 3,Jeremiah 20,Titus 3,
-,Thu,Ruth 4,Jeremiah 21,,Psalm 104
-,Fri,1 Samuel 1,Jeremiah 22,Proverbs 16,
-,Sat,1 Samuel 2,Jeremiah 23,Proverbs 17,Psalm 105
-36,Sun,,,,
-,Mon,1 Samuel 3,Jeremiah 24-25,1 Peter 1,
-,Tue,1 Samuel 4,Jeremiah 26,1 Peter 2,Psalm 106
-,Wed,1 Samuel 5,Jeremiah 27,1 Peter 3,
-,Thu,1 Samuel 6,Jeremiah 28,1 Peter 4,Psalm 107
-,Fri,1 Samuel 7,Jeremiah 29,1 Peter 5,
-,Sat,1 Samuel 8,Jeremiah 30-31,,Psalm 108
-37,Sun,,,,
-,Mon,1 Samuel 9,Jeremiah 32,Proverbs 18,
-,Tue,1 Samuel 10,Jeremiah 33,2 Timothy 1,Psalm 109
-,Wed,1 Samuel 11,Jeremiah 34,2 Timothy 2,
-,Thu,1 Samuel 12,Jeremiah 35,2 Timothy 3,Psalm 110
-,Fri,1 Samuel 13,Jeremiah 36,2 Timothy 4,
-,Sat,1 Samuel 14,Jeremiah 37,,Psalm 111
-38,Sun,,,,
-,Mon,1 Samuel 15-16,Jeremiah 38-39,Proverbs 19,
-,Tue,1 Samuel 17,Jeremiah 40,2 Peter 1,Psalm 112
-,Wed,1 Samuel 18,Jeremiah 41,2 Peter 2,
-,Thu,1 Samuel 19,Jeremiah 42,2 Peter 3,Psalm 113
-,Fri,1 Samuel 20,Jeremiah 43,,
-,Sat,1 Samuel 21-22,Jeremiah 44-45,Proverbs 20,Psalm 114
-39,Sun,,,,
-,Mon,1 Samuel 23,Jeremiah 46,Jude 1,
-,Tue,1 Samuel 24,Jeremiah 47,,Psalm 115
-,Wed,1 Samuel 25,Jeremiah 48,Proverbs 21,
-,Thu,1 Samuel 26,Jeremiah 49,Hebrews 1,Psalm 116
-,Fri,1 Samuel 27,Jeremiah 50,Hebrews 2,
-,Sat,1 Samuel 28,Jeremiah 51,Hebrews 3,Psalm 117
-40,Sun,,,,
-,Mon,1 Samuel 29-31,Jeremiah 52,Hebrews 4,
-,Tue,2 Samuel 1-2,Lamentations 1,Hebrews 5,Psalm 118
-,Wed,2 Samuel 3-4,Lamentations 2,Hebrews 6,
-,Thu,2 Samuel 5,Lamentations 3,Hebrews 7,Psalm 119
-,Fri,2 Samuel 6,Lamentations 4,Hebrews 8,
-,Sat,2 Samuel 7-8,Lamentations 5,Hebrews 9,Psalm 119
-41,Sun,,,,
-,Mon,2 Samuel 9-10,Obadiah 1,Hebrews 10,
-,Tue,2 Samuel 11-12,Daniel 1,Hebrews 11,Psalm 119
-,Wed,2 Samuel 13,Daniel 2,Hebrews 12,
-,Thu,2 Samuel 14,Daniel 3,Hebrews 13,Psalm 119
-,Fri,2 Samuel 15-16,Daniel 4,,
-,Sat,2 Samuel 17-18,Daniel 5-6,Proverbs 22,Psalm 119
-42,Sun,,,,
-,Mon,2 Samuel 19,Daniel 7,John 1,
-,Tue,2 Samuel 20-21,Daniel 8,John 2,Psalm 120
-,Wed,2 Samuel 22,Daniel 9,John 3,
-,Thu,2 Samuel 23,Daniel 10,John 4,Psalm 121
-,Fri,2 Samuel 24,Daniel 11,John 5,
-,Sat,,Daniel 12,John 6,Psalm 122
-43,Sun,,,,
-,Mon,1 Kings 1-2,,John 7,
-,Tue,1 Kings 3-4,Ezekiel 1,John 8,Psalm 123
-,Wed,1 Kings 5,Ezekiel 2,John 9,
-,Thu,1 Kings 6,Ezekiel 3,John 10,Psalm 124
-,Fri,1 Kings 7,Ezekiel 4,John 11,
-,Sat,1 Kings 8,Ezekiel 5,John 12,Psalm 125
-44,Sun,,,,
-,Mon,1 Kings 9-11,Ezekiel 6-7,John 13,
-,Tue,1 Kings 12,Ezekiel 8,John 14,Psalm 126
-,Wed,1 Kings 13,Ezekiel 9,John 15,
-,Thu,1 Kings 14,Ezekiel 10,John 16,Psalm 127
-,Fri,1 Kings 15,Ezekiel 11,John 17,
-,Sat,1 Kings 16,Ezekiel 12,John 18,Psalm 128
-45,Sun,,Ezekiel 13,,
-,Mon,1 Kings 17-18,Ezekiel 14,John 19,
-,Tue,1 Kings 19,Ezekiel 15,John 20,Psalm 129
-,Wed,1 Kings 20,Ezekiel 16,John 21,
-,Thu,1 Kings 21,Ezekiel 17,,Psalm 130
-,Fri,1 Kings 22,Ezekiel 18,Proverbs 23,
-,Sat,2 Kings 1-2,Ezekiel 19,,Psalm 131
-46,Sun,,,,
-,Mon,2 Kings 3,Ezekiel 20-21,1 John 1,
-,Tue,2 Kings 4,Ezekiel 22,1 John 2,Psalm 132
-,Wed,2 Kings 5,Ezekiel 23,1 John 3,
-,Thu,2 Kings 6,Ezekiel 24,1 John 4,Psalm 133
-,Fri,2 Kings 7,Ezekiel 25,1 John 5,
-,Sat,2 Kings 8,Ezekiel 26-27,,Psalm 134
-47,Sun,,,,
-,Mon,2 Kings 9-10,Ezekiel 28,Proverbs 24,
-,Tue,2 Kings 11,Ezekiel 29,2 John 1,Psalm 135
-,Wed,2 Kings 12,Ezekiel 30,Proverbs 25,
-,Thu,2 Kings 13,Ezekiel 31,3 John 1,Psalm 136
-,Fri,2 Kings 14,Ezekiel 32,Proverbs 26,
-,Sat,2 Kings 15,Ezekiel 33,,Psalm 137
-48,Sun,,,,
-,Mon,2 Kings 16-17,Ezekiel 34-35,Proverbs 27,
-,Tue,2 Kings 18,Ezekiel 36,Proverbs 28,Psalm 138
-,Wed,2 Kings 19,Ezekiel 37,Proverbs 29,
-,Thu,2 Kings 20,Ezekiel 38,Proverbs 30,Psalm 139
-,Fri,2 Kings 21,Ezekiel 39,Proverbs 31,
-,Sat,2 Kings 22-23,Ezekiel 40,,Psalm 140
-49,Sun,,,,
-,Mon,2 Kings 24,Ezekiel 41-42,Revelation 1,
-,Tue,2 Kings 25,Ezekiel 43,Revelation 2,Psalm 141
-,Wed,Ezra 1,Ezekiel 44,Revelation 3,
-,Thu,Ezra 2,Ezekiel 45,Revelation 4,Psalm 142
-,Fri,Ezra 3-4,Ezekiel 46,Revelation 5,
-,Sat,Ezra 5-6,Ezekiel 47-48,Revelation 6,Psalm 143
-50,Sun,,,,
-,Mon,Ezra 7,Haggai 1,Revelation 7,
-,Tue,Ezra 8,Haggai 2,Revelation 8,Psalm 144
-,Wed,Ezra 9,Zechariah 1,Revelation 9,
-,Thu,Ezra 10,Zechariah 2,Revelation 10,Psalm 145
-,Fri,Nehemiah 1-2,Zechariah 3,Revelation 11,
-,Sat,Nehemiah 3-4,Zechariah 4,Revelation 12,Psalm 146
-51,Sun,,,,
-,Mon,Nehemiah 5,Zechariah 5,Revelation 13,
-,Tue,Nehemiah 6-7,Zechariah 6,Revelation 14,Psalm 147
-,Wed,Nehemiah 8,Zechariah 7,Revelation 15,
-,Thu,Nehemiah 9,Zechariah 8,Revelation 16,Psalm 148
-,Fri,Nehemiah 10,Zechariah 9,Revelation 17,
-,Sat,Nehemiah 11,Zechariah 10,Revelation 18,
-52,Sun,,,,
-,Mon,Nehemiah 12,Zechariah 11,,Psalm 149
-,Tue,Nehemiah 13,Zechariah 12,Revelation 19,
-,Wed,Esther 1-2,Zechariah 13,Revelation 20,Psalm 150
-,Thu,Esther 3-4,Zechariah 14,Revelation 21,
-,Fri,Esther 5-7,Malachi 1-2,Revelation 22,
-,Sat,Esther 8-10,Malachi 3-4,,
+Week,Day,OT 1,OT 2,Gospels/Acts/Proverbs,Letters,Psalms
+1,Sun,,,,,
+,Mon,Genesis 1,Job 1,Matthew 1,James 1,
+,Tue,Genesis 2,Job 2,Matthew 2,,Psalm 1
+,Wed,Genesis 3,Job 3,Matthew 3,James 2,
+,Thu,Genesis 4,Job 4,Matthew 4,,Psalm 2
+,Fri,Genesis 5,Job 5,Matthew 5,James 3,
+,Sat,Genesis 6,Job 6,Matthew 6,,Psalm 3
+2,Sun,,,,,
+,Mon,Genesis 7-8,Job 7-8,Matthew 7,James 4,
+,Tue,Genesis 9,Job 9,Matthew 8,,Psalm 4
+,Wed,Genesis 10,Job 10,Matthew 9,James 5,
+,Thu,Genesis 11,Job 11,Matthew 10,,Psalm 5
+,Fri,Genesis 12,Job 12,Matthew 11,,
+,Sat,Genesis 13,Job 13,Matthew 12,,Psalm 6
+3,Sun,,,,,
+,Mon,Genesis 14-15,Job 14-15,Matthew 13,Galatians 1,
+,Tue,Genesis 16,Job 16,Matthew 14,,Psalm 7
+,Wed,Genesis 17,Job 17,Matthew 15,Galatians 2,
+,Thu,Genesis 18,Job 18,Matthew 16,,Psalm 8
+,Fri,Genesis 19,Job 19,Matthew 17,Galatians 3,
+,Sat,Genesis 20,Job 20,Matthew 18,,Psalm 9
+4,Sun,,,,,
+,Mon,Genesis 21-22,Job 21-22,Matthew 19,Galatians 4,
+,Tue,Genesis 23,Job 23,Matthew 20,,Psalm 10
+,Wed,Genesis 24,Job 24,Matthew 21,Galatians 5,
+,Thu,Genesis 25,Job 25,Matthew 22,,Psalm 11
+,Fri,Genesis 26,Job 26,Matthew 23,Galatians 6,
+,Sat,Genesis 27,Job 27,Matthew 24,,Psalm 12
+5,Sun,,,,,
+,Mon,Genesis 28-29,Job 28-29,Matthew 25,1 Thessalonians 1,
+,Tue,Genesis 30,Job 30,Matthew 26,,Psalm 13
+,Wed,Genesis 31,Job 31,Matthew 27,1 Thessalonians 2,
+,Thu,Genesis 32,Job 32,Matthew 28,,Psalm 14
+,Fri,Genesis 33,Job 33,,1 Thessalonians 3,
+,Sat,Genesis 34,Job 34,,,Psalm 15
+6,Sun,,,,,
+,Mon,Genesis 35-36,Job 35-36,Mark 1,1 Thessalonians 4,
+,Tue,Genesis 37,Job 37,Mark 2,,Psalm 16
+,Wed,Genesis 38,Job 38,Mark 3,1 Thessalonians 5,
+,Thu,Genesis 39,Job 39,Mark 4,,Psalm 17
+,Fri,Genesis 40,Job 40,Mark 5,,
+,Sat,Genesis 41,Job 41-42,Mark 6,,Psalm 18
+7,Sun,,,,,
+,Mon,Genesis 42-43,Ecclesiastes 1,Mark 7,2 Thessalonians 1,
+,Tue,Genesis 44,Ecclesiastes 2,Mark 8,,Psalm 19
+,Wed,Genesis 45,Ecclesiastes 3,Mark 9,2 Thessalonians 2,
+,Thu,Genesis 46,Ecclesiastes 4,Mark 10,,Psalm 20
+,Fri,Genesis 47,Ecclesiastes 5,Mark 11,2 Thessalonians 3,
+,Sat,Genesis 48,Ecclesiastes 6,Mark 12,,Psalm 21
+8,Sun,,,,,
+,Mon,Genesis 49,Ecclesiastes 7,Mark 13,1 Corinthians 1,
+,Tue,Genesis 50,Ecclesiastes 8,Mark 14,,Psalm 22
+,Wed,Exodus 1,Ecclesiastes 9,Mark 15,1 Corinthians 2,
+,Thu,Exodus 2,Ecclesiastes 10,Mark 16,,Psalm 23
+,Fri,Exodus 3,Ecclesiastes 11,,1 Corinthians 3,
+,Sat,Exodus 4,Ecclesiastes 12,,,Psalm 24
+9,Sun,,,,,
+,Mon,Exodus 5-6,Song of Solomon 1-2,Luke 1,1 Corinthians 4,
+,Tue,Exodus 7,Song of Solomon 3-4,Luke 2,,Psalm 25
+,Wed,Exodus 8,Song of Solomon 5-6,Luke 3,1 Corinthians 5,
+,Thu,Exodus 9,Song of Solomon 7-8,Luke 4,,Psalm 26
+,Fri,Exodus 10,Joel 1,Luke 5,1 Corinthians 6,
+,Sat,Exodus 11,Joel 2-3,Luke 6,,Psalm 27
+10,Sun,,,,,
+,Mon,Exodus 12-13,Amos 1-2,Luke 7,1 Corinthians 7,
+,Tue,Exodus 14,Amos 3-4,Luke 8,,Psalm 28
+,Wed,Exodus 15,Amos 5,Luke 9,1 Corinthians 8,
+,Thu,Exodus 16,Amos 6-7,Luke 10,,Psalm 29
+,Fri,Exodus 17,Amos 8-9,Luke 11,1 Corinthians 9,
+,Sat,Exodus 18-19,,Luke 12,,Psalm 30
+11,Sun,,,,,
+,Mon,Exodus 20,Hosea 1,Luke 13,1 Corinthians 10,
+,Tue,Exodus 21,Hosea 2,Luke 14,,Psalm 31
+,Wed,Exodus 22,Hosea 3-4,Luke 15,1 Corinthians 11,
+,Thu,Exodus 23,Hosea 5,Luke 16,,Psalm 32
+,Fri,Exodus 24,Hosea 6-7,Luke 17,1 Corinthians 12,
+,Sat,Exodus 25,Hosea 8,Luke 18,,Psalm 33
+12,Sun,,,,,
+,Mon,Exodus 26-27,Hosea 9,Luke 19,1 Corinthians 13,
+,Tue,Exodus 28,Hosea 10,Luke 20,,Psalm 34
+,Wed,Exodus 29,Hosea 11-12,Luke 21,1 Corinthians 14,
+,Thu,Exodus 30,Hosea 13,Luke 22,,Psalm 35
+,Fri,Exodus 31,Hosea 14,Luke 23,1 Corinthians 15,
+,Sat,Exodus 32,,Luke 24,,Psalm 36
+13,Sun,,,,,
+,Mon,Exodus 33-34,Jonah 1-2,Acts 1,1 Corinthians 16,
+,Tue,Exodus 35,Jonah 3-4,Acts 2,,Psalm 37
+,Wed,Exodus 36,Micah 1-2,Acts 3,,
+,Thu,Exodus 37,Micah 3-4,Acts 4,,Psalm 38
+,Fri,Exodus 38,Micah 5-6,Acts 5,,
+,Sat,Exodus 39-40,Micah 7,Acts 6,,Psalm 39
+14,Sun,,,,,
+,Mon,Leviticus 1,1 Chronicles 1,Acts 7,Philippians 1,
+,Tue,Leviticus 2,1 Chronicles 2,Acts 8,,Psalm 40
+,Wed,Leviticus 3,1 Chronicles 3,Acts 9,Philippians 2,
+,Thu,Leviticus 4,1 Chronicles 4,Acts 10,,Psalm 41
+,Fri,Leviticus 5-6,1 Chronicles 5,Acts 11,Philippians 3,
+,Sat,Leviticus 7,1 Chronicles 6,Acts 12,,Psalm 42
+15,Sun,,,,,
+,Mon,Leviticus 8,1 Chronicles 7-8,Acts 13,Philippians 4,
+,Tue,Leviticus 9,1 Chronicles 9,Acts 14,,Psalm 43
+,Wed,Leviticus 10,1 Chronicles 10,Acts 15,Philemon 1,
+,Thu,Leviticus 11,1 Chronicles 11,Acts 16,,Psalm 44
+,Fri,Leviticus 12,1 Chronicles 12,Acts 17,,
+,Sat,Leviticus 13,1 Chronicles 13-14,Acts 18,,Psalm 45
+16,Sun,,,,,
+,Mon,Leviticus 14,1 Chronicles 15-16,Acts 19,Colossians 1,
+,Tue,Leviticus 15,1 Chronicles 17,Acts 20,,Psalm 46
+,Wed,Leviticus 16,1 Chronicles 18,Acts 21,Colossians 2,
+,Thu,Leviticus 17,1 Chronicles 19-20,Acts 22,,Psalm 47
+,Fri,Leviticus 18,1 Chronicles 21,Acts 23,Colossians 3,
+,Sat,Leviticus 19,1 Chronicles 22,Acts 24,,Psalm 48
+17,Sun,,,,,
+,Mon,Leviticus 20-21,1 Chronicles 23-24,Acts 25,Colossians 4,
+,Tue,Leviticus 22,1 Chronicles 25,Acts 26,,Psalm 49
+,Wed,Leviticus 23,1 Chronicles 26,Acts 27,,
+,Thu,Leviticus 24,1 Chronicles 27,Acts 28,,Psalm 50
+,Fri,Leviticus 25,1 Chronicles 28,,,
+,Sat,Leviticus 26-27,1 Chronicles 29,,,Psalm 51
+18,Sun,,,,,
+,Mon,Numbers 1,2 Chronicles 1,John 1,Ephesians 1,
+,Tue,Numbers 2,2 Chronicles 2,John 2,,Psalm 52
+,Wed,Numbers 3,2 Chronicles 3-4,John 3,Ephesians 2,
+,Thu,Numbers 4,2 Chronicles 5,John 4,,Psalm 53
+,Fri,Numbers 5,2 Chronicles 6,John 5,Ephesians 3,
+,Sat,Numbers 6,2 Chronicles 7,John 6,,Psalm 54
+19,Sun,,,,,
+,Mon,Numbers 7,2 Chronicles 8-9,John 7,Ephesians 4,
+,Tue,Numbers 8,2 Chronicles 10,John 8,,Psalm 55
+,Wed,Numbers 9,2 Chronicles 11,John 9,Ephesians 5,
+,Thu,Numbers 10,2 Chronicles 12,John 10,,Psalm 56
+,Fri,Numbers 11,2 Chronicles 13,John 11,Ephesians 6,
+,Sat,Numbers 12,2 Chronicles 14-16,John 12,,Psalm 57
+20,Sun,,,,,
+,Mon,Numbers 13-14,2 Chronicles 17-18,John 13,2 Corinthians 1,
+,Tue,Numbers 15,2 Chronicles 19,John 14,,Psalm 58
+,Wed,Numbers 16,2 Chronicles 20,John 15,2 Corinthians 2,
+,Thu,Numbers 17,2 Chronicles 21,John 16,,Psalm 59
+,Fri,Numbers 18,2 Chronicles 22,John 17,2 Corinthians 3,
+,Sat,Numbers 19,2 Chronicles 23,John 18,,Psalm 60
+21,Sun,,,,,
+,Mon,Numbers 20-21,2 Chronicles 24,John 19,2 Corinthians 4,
+,Tue,Numbers 22,2 Chronicles 25,John 20,,Psalm 61
+,Wed,Numbers 23,2 Chronicles 26-27,John 21,2 Corinthians 5,
+,Thu,Numbers 24,2 Chronicles 28,,,Psalm 62
+,Fri,Numbers 25,2 Chronicles 29,Proverbs 1,2 Corinthians 6,
+,Sat,Numbers 26-27,2 Chronicles 30,Proverbs 2,,Psalm 63
+22,Sun,,,,,
+,Mon,Numbers 28,2 Chronicles 31-32,Proverbs 3,2 Corinthians 7,
+,Tue,Numbers 29,2 Chronicles 33,Proverbs 4,,Psalm 64
+,Wed,Numbers 30,2 Chronicles 34,Proverbs 5,2 Corinthians 8,
+,Thu,Numbers 31,2 Chronicles 35,Proverbs 6,,Psalm 65
+,Fri,Numbers 32,2 Chronicles 36,Proverbs 7,2 Corinthians 9,
+,Sat,Numbers 33,Isaiah 1,Proverbs 8,,Psalm 66
+23,Sun,,,,,
+,Mon,Numbers 34-35,Isaiah 2,Proverbs 9,2 Corinthians 10,
+,Tue,Numbers 36,Isaiah 3-4,Proverbs 10,,Psalm 67
+,Wed,Deuteronomy 1,Isaiah 5,Proverbs 11,2 Corinthians 11,
+,Thu,Deuteronomy 2,Isaiah 6,Proverbs 12,,Psalm 68
+,Fri,Deuteronomy 3,Isaiah 7,Proverbs 13,2 Corinthians 12,
+,Sat,Deuteronomy 4,Isaiah 8-9,Proverbs 14,,Psalm 69
+24,Sun,,,,,
+,Mon,Deuteronomy 5,Isaiah 10,Proverbs 15,2 Corinthians 13,
+,Tue,Deuteronomy 6,Isaiah 11-12,Proverbs 16,,Psalm 70
+,Wed,Deuteronomy 7,Isaiah 13,Proverbs 17,,
+,Thu,Deuteronomy 8,Isaiah 14,Proverbs 18,,Psalm 71
+,Fri,Deuteronomy 9,Isaiah 15-16,Proverbs 19,,
+,Sat,Deuteronomy 10-11,Isaiah 17-18,Proverbs 20,,Psalm 72
+25,Sun,,,,,
+,Mon,Deuteronomy 12,Isaiah 19-21,Proverbs 21,Romans 1,
+,Tue,Deuteronomy 13,Isaiah 22,Proverbs 22,,Psalm 73
+,Wed,Deuteronomy 14,Isaiah 23,Proverbs 23,Romans 2,
+,Thu,Deuteronomy 15,Isaiah 24,Proverbs 24,,Psalm 74
+,Fri,Deuteronomy 16,Isaiah 25,Proverbs 25,Romans 3,
+,Sat,Deuteronomy 17-18,Isaiah 26-27,Proverbs 26,,Psalm 75
+26,Sun,,,,,
+,Mon,Deuteronomy 19,Isaiah 28-29,Proverbs 27,Romans 4,
+,Tue,Deuteronomy 20,Isaiah 30,Proverbs 28,,Psalm 76
+,Wed,Deuteronomy 21,Isaiah 31-32,Proverbs 29,Romans 5,
+,Thu,Deuteronomy 22,Isaiah 33,Proverbs 30,,Psalm 77
+,Fri,Deuteronomy 23,Isaiah 34-35,Proverbs 31,Romans 6,
+,Sat,Deuteronomy 24-25,Isaiah 36-37,,,Psalm 78
+27,Sun,,,,,
+,Mon,Deuteronomy 26,Isaiah 38,Matthew 1,Romans 7,
+,Tue,Deuteronomy 27,Isaiah 39,Matthew 2,,Psalm 79
+,Wed,Deuteronomy 28,Isaiah 40,Matthew 3,Romans 8,
+,Thu,Deuteronomy 29,Isaiah 41,Matthew 4,,Psalm 80
+,Fri,Deuteronomy 30,Isaiah 42,Matthew 5,Romans 9,
+,Sat,Deuteronomy 31,Isaiah 43,Matthew 6,,Psalm 81
+28,Sun,,,,,
+,Mon,Deuteronomy 32,Isaiah 44-45,Matthew 7,Romans 10,
+,Tue,Deuteronomy 33-34,Isaiah 46-47,Matthew 8,,Psalm 82
+,Wed,Joshua 1,Isaiah 48,Matthew 9,Romans 11,
+,Thu,Joshua 2,Isaiah 49,Matthew 10,,Psalm 83
+,Fri,Joshua 3,Isaiah 50-51,Matthew 11,Romans 12,
+,Sat,Joshua 4,Isaiah 52-53,Matthew 12,,Psalm 84
+29,Sun,,,,,
+,Mon,Joshua 5,Isaiah 54,Matthew 13,Romans 13,
+,Tue,Joshua 6,Isaiah 55-56,Matthew 14,,Psalm 85
+,Wed,Joshua 7,Isaiah 57,Matthew 15,Romans 14,
+,Thu,Joshua 8,Isaiah 58,Matthew 16,,Psalm 86
+,Fri,Joshua 9,Isaiah 59,Matthew 17,Romans 15,
+,Sat,Joshua 10,Isaiah 60-61,Matthew 18,,Psalm 87
+30,Sun,,,,,
+,Mon,Joshua 11-12,Isaiah 62,Matthew 19,Romans 16,
+,Tue,Joshua 13,Isaiah 63,Matthew 20,,Psalm 88
+,Wed,Joshua 14,Isaiah 64,Matthew 21,,
+,Thu,Joshua 15,Isaiah 65,Matthew 22,,Psalm 89
+,Fri,Joshua 16-17,Isaiah 66,Matthew 23,,
+,Sat,Joshua 18-19,,Matthew 24,,Psalm 90
+31,Sun,,,,,
+,Mon,Joshua 20,Nahum 1,Matthew 25,1 Timothy 1,
+,Tue,Joshua 21,Nahum 2,Matthew 26,,Psalm 91
+,Wed,Joshua 22,Nahum 3,Matthew 27,1 Timothy 2,
+,Thu,Joshua 23,Zephaniah 1,Matthew 28,,Psalm 92
+,Fri,Joshua 24,Zephaniah 2,,1 Timothy 3,
+,Sat,,Zephaniah 3,,,Psalm 93
+32,Sun,,,,,
+,Mon,Judges 1,Habakkuk 1,Mark 1,1 Timothy 4,
+,Tue,Judges 2,Habakkuk 2,Mark 2,,Psalm 94
+,Wed,Judges 3,Habakkuk 3,Mark 3,1 Timothy 5,
+,Thu,Judges 4,,Mark 4,,Psalm 95
+,Fri,Judges 5,Jeremiah 1,Mark 5,1 Timothy 6,
+,Sat,Judges 6,Jeremiah 2,Mark 6,,Psalm 96
+33,Sun,,,,,
+,Mon,Judges 7-8,Jeremiah 3-4,Mark 7,Titus 1,
+,Tue,Judges 9,Jeremiah 5,Mark 8,,Psalm 97
+,Wed,Judges 10,Jeremiah 6,Mark 9,Titus 2,
+,Thu,Judges 11,Jeremiah 7,Mark 10,,Psalm 98
+,Fri,Judges 12,Jeremiah 8-9,Mark 11,Titus 3,
+,Sat,Judges 13-14,Jeremiah 10,Mark 12,,Psalm 99
+34,Sun,,,,,
+,Mon,Judges 15,Jeremiah 11,Mark 13,1 Peter 1,
+,Tue,Judges 16,Jeremiah 12,Mark 14,,Psalm 100
+,Wed,Judges 17,Jeremiah 13,Mark 15,1 Peter 2,
+,Thu,Judges 18,Jeremiah 14,Mark 16,,Psalm 101
+,Fri,Judges 19,Jeremiah 15,,1 Peter 3,
+,Sat,Judges 20-21,Jeremiah 16,,,Psalm 102
+35,Sun,,,,,
+,Mon,Ruth 1,Jeremiah 17-18,Luke 1,1 Peter 4,
+,Tue,Ruth 2,Jeremiah 19,Luke 2,,Psalm 103
+,Wed,Ruth 3,Jeremiah 20,Luke 3,1 Peter 5,
+,Thu,Ruth 4,Jeremiah 21,Luke 4,,Psalm 104
+,Fri,1 Samuel 1,Jeremiah 22,Luke 5,2 Timothy 1,
+,Sat,1 Samuel 2,Jeremiah 23,Luke 6,,Psalm 105
+36,Sun,,,,,
+,Mon,1 Samuel 3,Jeremiah 24-25,Luke 7,2 Timothy 2,
+,Tue,1 Samuel 4,Jeremiah 26,Luke 8,,Psalm 106
+,Wed,1 Samuel 5,Jeremiah 27,Luke 9,2 Timothy 3,
+,Thu,1 Samuel 6,Jeremiah 28,Luke 10,,Psalm 107
+,Fri,1 Samuel 7,Jeremiah 29,Luke 11,2 Timothy 4,
+,Sat,1 Samuel 8,Jeremiah 30-31,Luke 12,,Psalm 108
+37,Sun,,,,,
+,Mon,1 Samuel 9,Jeremiah 32,Luke 13,2 Peter 1,
+,Tue,1 Samuel 10,Jeremiah 33,Luke 14,,Psalm 109
+,Wed,1 Samuel 11,Jeremiah 34,Luke 15,2 Peter 2,
+,Thu,1 Samuel 12,Jeremiah 35,Luke 16,,Psalm 110
+,Fri,1 Samuel 13,Jeremiah 36,Luke 17,2 Peter 3,
+,Sat,1 Samuel 14,Jeremiah 37,Luke 18,,Psalm 111
+38,Sun,,,,,
+,Mon,1 Samuel 15-16,Jeremiah 38-39,Luke 19,Jude 1,
+,Tue,1 Samuel 17,Jeremiah 40,Luke 20,,Psalm 112
+,Wed,1 Samuel 18,Jeremiah 41,Luke 21,Hebrews 1,
+,Thu,1 Samuel 19,Jeremiah 42,Luke 22,,Psalm 113
+,Fri,1 Samuel 20,Jeremiah 43,Luke 23,Hebrews 2,
+,Sat,1 Samuel 21-22,Jeremiah 44-45,Luke 24,,Psalm 114
+39,Sun,,,,,
+,Mon,1 Samuel 23,Jeremiah 46,Acts 1,Hebrews 3,
+,Tue,1 Samuel 24,Jeremiah 47,Acts 2,,Psalm 115
+,Wed,1 Samuel 25,Jeremiah 48,Acts 3,Hebrews 4,
+,Thu,1 Samuel 26,Jeremiah 49,Acts 4,,Psalm 116
+,Fri,1 Samuel 27,Jeremiah 50,Acts 5,Hebrews 5,
+,Sat,1 Samuel 28,Jeremiah 51,Acts 6,,Psalm 117
+40,Sun,,,,,
+,Mon,1 Samuel 29-31,Jeremiah 52,Acts 7,Hebrews 6,
+,Tue,2 Samuel 1-2,Lamentations 1,Acts 8,,Psalm 118
+,Wed,2 Samuel 3-4,Lamentations 2,Acts 9,Hebrews 7,
+,Thu,2 Samuel 5,Lamentations 3,Acts 10,,Psalm 119
+,Fri,2 Samuel 6,Lamentations 4,Acts 11,Hebrews 8,
+,Sat,2 Samuel 7-8,Lamentations 5,Acts 12,,Psalm 119
+41,Sun,,,,,
+,Mon,2 Samuel 9-10,Obadiah 1,Acts 13,Hebrews 9,
+,Tue,2 Samuel 11-12,Daniel 1,Acts 14,,Psalm 119
+,Wed,2 Samuel 13,Daniel 2,Acts 15,Hebrews 10,
+,Thu,2 Samuel 14,Daniel 3,Acts 16,,Psalm 119
+,Fri,2 Samuel 15-16,Daniel 4,Acts 17,Hebrews 11,
+,Sat,2 Samuel 17-18,Daniel 5-6,Acts 18,,Psalm 119
+42,Sun,,,,,
+,Mon,2 Samuel 19,Daniel 7,Acts 19,Hebrews 12,
+,Tue,2 Samuel 20-21,Daniel 8,Acts 20,,Psalm 120
+,Wed,2 Samuel 22,Daniel 9,Acts 21,Hebrews 13,
+,Thu,2 Samuel 23,Daniel 10,Acts 22,,Psalm 121
+,Fri,2 Samuel 24,Daniel 11,Acts 23,1 John 1,
+,Sat,,Daniel 12,Acts 24,,Psalm 122
+43,Sun,,,,,
+,Mon,1 Kings 1-2,,Acts 25,1 John 2,
+,Tue,1 Kings 3-4,Ezekiel 1,Acts 26,,Psalm 123
+,Wed,1 Kings 5,Ezekiel 2,Acts 27,1 John 3,
+,Thu,1 Kings 6,Ezekiel 3,Acts 28,,Psalm 124
+,Fri,1 Kings 7,Ezekiel 4,,1 John 4,
+,Sat,1 Kings 8,Ezekiel 5,,,Psalm 125
+44,Sun,,,,,
+,Mon,1 Kings 9-11,Ezekiel 6-7,John 1,1 John 5,
+,Tue,1 Kings 12,Ezekiel 8,John 2,,Psalm 126
+,Wed,1 Kings 13,Ezekiel 9,John 3,2 John 1,
+,Thu,1 Kings 14,Ezekiel 10,John 4,,Psalm 127
+,Fri,1 Kings 15,Ezekiel 11,John 5,3 John 1,
+,Sat,1 Kings 16,Ezekiel 12,John 6,,Psalm 128
+45,Sun,,,,,
+,Mon,1 Kings 17-18,Ezekiel 13-14,John 7,Revelation 1,
+,Tue,1 Kings 19,Ezekiel 15,John 8,,Psalm 129
+,Wed,1 Kings 20,Ezekiel 16,John 9,Revelation 2,
+,Thu,1 Kings 21,Ezekiel 17,John 10,,Psalm 130
+,Fri,1 Kings 22,Ezekiel 18,John 11,Revelation 3,
+,Sat,2 Kings 1-2,Ezekiel 19,John 12,,Psalm 131
+46,Sun,,,,,
+,Mon,2 Kings 3,Ezekiel 20-21,John 13,Revelation 4,
+,Tue,2 Kings 4,Ezekiel 22,John 14,,Psalm 132
+,Wed,2 Kings 5,Ezekiel 23,John 15,Revelation 5,
+,Thu,2 Kings 6,Ezekiel 24,John 16,,Psalm 133
+,Fri,2 Kings 7,Ezekiel 25,John 17,Revelation 6,
+,Sat,2 Kings 8,Ezekiel 26-27,John 18,,Psalm 134
+47,Sun,,,,,
+,Mon,2 Kings 9-10,Ezekiel 28,John 19,Revelation 7,
+,Tue,2 Kings 11,Ezekiel 29,John 20,,Psalm 135
+,Wed,2 Kings 12,Ezekiel 30,John 21,Revelation 8,
+,Thu,2 Kings 13,Ezekiel 31,,,Psalm 136
+,Fri,2 Kings 14,Ezekiel 32,Proverbs 1,Revelation 9,
+,Sat,2 Kings 15,Ezekiel 33,Proverbs 2,,Psalm 137
+48,Sun,,,,,
+,Mon,2 Kings 16-17,Ezekiel 34-35,Proverbs 3,Revelation 10,
+,Tue,2 Kings 18,Ezekiel 36,Proverbs 4,,Psalm 138
+,Wed,2 Kings 19,Ezekiel 37,Proverbs 5,Revelation 11,
+,Thu,2 Kings 20,Ezekiel 38,Proverbs 6,,Psalm 139
+,Fri,2 Kings 21,Ezekiel 39,Proverbs 7,Revelation 12,
+,Sat,2 Kings 22-23,Ezekiel 40,Proverbs 8,,Psalm 140
+49,Sun,,,,,
+,Mon,2 Kings 24,Ezekiel 41-42,Proverbs 9,Revelation 13,
+,Tue,2 Kings 25,Ezekiel 43,Proverbs 10,,Psalm 141
+,Wed,Ezra 1,Ezekiel 44,Proverbs 11,Revelation 14,
+,Thu,Ezra 2,Ezekiel 45,Proverbs 12,,Psalm 142
+,Fri,Ezra 3-4,Ezekiel 46,Proverbs 13,Revelation 15,
+,Sat,Ezra 5-6,Ezekiel 47-48,Proverbs 14,,Psalm 143
+50,Sun,,,,,
+,Mon,Ezra 7,Haggai 1,Proverbs 15,Revelation 16,
+,Tue,Ezra 8,Haggai 2,Proverbs 16,,Psalm 144
+,Wed,Ezra 9,Zechariah 1,Proverbs 17,Revelation 17,
+,Thu,Ezra 10,Zechariah 2,Proverbs 18,,Psalm 145
+,Fri,Nehemiah 1-2,Zechariah 3,Proverbs 19,Revelation 18,
+,Sat,Nehemiah 3-4,Zechariah 4,Proverbs 20,,Psalm 146
+51,Sun,,,,,
+,Mon,Nehemiah 5,Zechariah 5,Proverbs 21,Revelation 19,
+,Tue,Nehemiah 6-7,Zechariah 6,Proverbs 22,,Psalm 147
+,Wed,Nehemiah 8,Zechariah 7,Proverbs 23,Revelation 20,
+,Thu,Nehemiah 9,Zechariah 8,Proverbs 24,,Psalm 148
+,Fri,Nehemiah 10,Zechariah 9,Proverbs 25,Revelation 21,
+,Sat,Nehemiah 11,Zechariah 10,Proverbs 26,,Psalm 149
+52,Sun,,,,,
+,Mon,Nehemiah 12,Zechariah 11,Proverbs 27,Revelation 22,
+,Tue,Nehemiah 13,Zechariah 12,Proverbs 28,,Psalm 150
+,Wed,Esther 1-2,Zechariah 13,Proverbs 29,,
+,Thu,Esther 3-4,Zechariah 14,Proverbs 30,,
+,Fri,Esther 5-7,Malachi 1-2,Proverbs 31,,
+,Sat,Esther 8-10,Malachi 3-4,,,
+,,,,,,

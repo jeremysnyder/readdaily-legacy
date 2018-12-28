@@ -7,24 +7,27 @@ def file_to_map(file):
     with open(file, 'r') as f:
         r = csv.reader(f)
         reading_number = 0
-        first_row = True
-        for row in r:
-            if first_row:
-                first_row = False
+        for id, row in enumerate(r):
+            if id is 0:
                 continue
-            if row[2]:
+            print("{0}: {1} [{2}]".format(id, row[2], reading_number + 1))
+            if has_readings(row):
                 reading_number += 1
-                item = {}
-                item["otReading"] = row[2]
+                item = {"otReading": row[2]}
                 if row[3]: item["ot2Reading"] = row[3]
-                if row[4]: item["ntProverbsReading"] = row[4]
-                if row[5]: item["psalmsReading"] = row[5]
+                if row[4]: item["gapReading"] = row[4]
+                if row[5]: item["letterReading"] = row[5]
+                if row[6]: item["psalmsReading"] = row[6]
 
-                # Remove keys with the value zero
-                key = "{0}".format(reading_number)
+                key = str(reading_number)
                 readings[key] = dict((k, v) for k, v in item.items() if not isinstance(v, int))
 
+    print(len(readings))
+
     return readings
+
+def has_readings(row):
+    return row[2] or row[3] or row[4] or row[5]
 
 def num(s):
     try:

@@ -1,34 +1,24 @@
 do (ng = angular, moment = moment) ->
 
   ReadingPlanData = ['$http', '$q', ($http, $q) ->
-    padDatePart = (part) -> String("00" + part).slice(-2)
-    keyFor = (month, day) -> "#{padDatePart(month)}_#{padDatePart(day)}"
-
-    dayPlan = (type, month, day) ->
-      console.log month, day
-      fullDay = moment().month(month - 1).date(day)
-      # console.log readingDay(moment('2017-01-01'))
-      # console.log readingDay(moment('2017-01-02'))
-      # console.log readingDay(moment('2017-01-07'))
-      # console.log readingDay(moment('2017-01-08'))
-      # console.log readingDay(moment('2017-01-09'))
-      # console.log readingDay(moment('2017-01-15'))
-      # console.log readingDay(moment('2017-01-16'))
-      console.log fullDay.format()
-      console.log readingDay(fullDay)
-      dayKey = keyFor month, day
-      dayKey = readingDay(fullDay)
+    dayPlan = (type, date) ->
+      dayKey = readingDay(date)
       if dayKey
-        $http({method: 'GET', url: "assets/data/#{type}-bible-reading-plan/#{dayKey}.json"}).then (response) ->
-          $q.when response.data
+        success = (response) -> $q.when response.data
+        error = (response) -> $q.when {} # 404 on the file request
+        $http(method: 'GET', url: "assets/data/#{type}-bible-reading-plan/#{dayKey}.json").then success, error
       else
         $q.when {}
 
     readingDay = (value) ->
       asMoment = moment value
+      week = asMoment.week()
+      # In Moment, the week with Jan1 is week 1, so the last days can fall on that week
+      # Also, week should be zero based for math
+      week = (if asMoment.month() == 11 && week == 1 then 53 else week) - 1 
       switch asMoment.day()
         when 0 then null # No readings on Sunday
-        else asMoment.dayOfYear() - asMoment.week() # 6 reading days in a week
+        else asMoment.dayOfYear() - week # 6 reading days in a week
 
     {} =
       dayPlan: dayPlan

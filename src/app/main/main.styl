@@ -14,6 +14,9 @@ md-content
       md-icon
         font-size 36px
 
+    .toolbar-title
+      text-align center
+
   md-card
     md-card-header
       padding 0
@@ -25,26 +28,11 @@ md-content
         background-color #DDD
         border-top-left-radius header-radius
         border-bottom-left-radius header-radius
-        color #777
+        color #444
+        width 100%
 
         h3, h4
           margin 5px
-
-      md-card-header-action
-        display inline-block
-        float right
-        text-align center
-        background-color #DDD
-        border-top-right-radius header-radius
-        border-bottom-right-radius header-radius
-        color #777
-
-        button.md-button
-          line-height normal
-          min-height inherit
-          min-width inherit
-          margin-left 0
-          margin-right 0
 
       md-card-header-text
         .md-title
@@ -53,6 +41,14 @@ md-content
 
           &.center
             text-align center
+
+    md-card-content
+      padding 0 5px
+      .md-button
+        text-align center
+        background-color #DDD
+        color #777
+        margin-right 0
 
 md-toolbar
   &.md-bottom-sticky
